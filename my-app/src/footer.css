@@ -1,0 +1,34 @@
+
+.footer-container {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background: #FFFAF4;
+  bottom: 0px;
+}
+
+.follow-me-socials {
+  display: flex;
+  justify-content: center;
+  color: #064c3f;
+  margin-top: 2.5rem;
+}
+
+.instagram-icon {
+  margin-left: 0.5rem;
+}
+.footer-text {
+  font-size: 12px;
+}
+
+@media screen
+  and (min-device-width: 300px)
+  and (max-device-width: 449px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+   .footer-container {
+    height: 100%;
+    background-color: #FDF5E6 !important;
+   }
+  }

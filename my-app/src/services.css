@@ -1,0 +1,114 @@
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: rgb(253,245,230);
+}
+
+.services-promo-text {
+  margin-top: 4rem;
+  font-weight: normal;
+  color: #a0522d;
+  font-family: 'Klee-One';
+  width: 25%;
+  padding: 2rem;
+}
+
+.free-consultation-header {
+  color: #064c3f
+}
+.call-or-email-text {
+  font-size: 1.5rem;
+}
+
+.what-i-do-text {
+  margin-top: 5rem;
+  font-weight: normal;
+  color: #a0522d;
+  width: 60%;
+}
+
+.travel-to-you-text {
+font-size: 0.8rem;
+font-weight: bold;
+letter-spacing: 0.03rem;
+color: #064c3f;
+}
+
+
+/* ----------- iPhone 12 and 12 pro ----------- */
+@media screen
+  and (min-device-width: 300px)
+  and (max-device-width: 449px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+   }
+   .services-promo-text {
+    font-size: 1.5rem;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    background-color: #eae3c9;
+   }
+   .got-questions-title {
+    padding-top: 1rem;
+   }
+   .call-or-email-text {
+    font-size: 1rem;
+   }
+   .what-i-do-text {
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+   }
+  .travel-to-you-text {
+    text-align: center;
+   }
+   .what-i-do-header {
+    text-align: center;
+    margin: auto;
+    padding-left: 0.6rem;
+   }
+   .table-row td {
+    width: fit-content;
+    border-right: 1px solid lightgrey;
+    padding: 15px;
+   }
+  }
+
+
+       /* ipad mini sizes */
+       @media only screen
+       and (min-device-width: 450px)
+       and (max-device-width: 1023px)
+       and (-webkit-min-device-pixel-ratio: 1) {
+        .services-container {
+          /* border: 2px solid blue; */
+          height: fit-content;
+        }
+        .services-promo-text {
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+         }
+         .what-i-do-text {
+          margin-top: 2rem;
+         }
+         .call-or-email-text {
+          font-size: 23px;
+         }
+
+   }

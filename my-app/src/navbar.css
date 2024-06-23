@@ -1,0 +1,50 @@
+.nav-bar-container {
+  background: #92ad94 !important;
+  color: 'black' !important;
+  width: 100% !important;
+  position: fixed !important;
+  font-weight: 500 !important;
+}
+
+.nav-logo-text, .hidden-nav-logo-text {
+  font-family: 'Klee-One' !important;
+  font-weight: 600px !important;
+  color: inherit !important;
+  text-decoration: none;
+  font-size: 22px !important;
+}
+
+.nav-leaf-icon {
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.nav-links-container {
+  margin-left: 30%;
+}
+
+.links-text {
+  font-family: 'Klee-One';
+}
+
+.instagram-navbar {
+  margin-top: 1.6rem;
+}
+
+/* ----------- iPhone 12 and 12 pro ----------- */
+@media screen
+  and (min-device-width: 300px)
+  and (max-device-width: 449px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   .nav-bar-container {
+    width: 100%;
+    position: relative;
+   }
+   .nav-logo-text, .hidden-nav-logo-text {
+    font-size: 15px !important;
+   }
+
+  }
+
+
