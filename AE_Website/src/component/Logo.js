@@ -22,9 +22,9 @@ export const Logo = () => {
         sx={{
           mr: 2,
           display: { xs: 'none', md: 'flex' },
-          fontFamily: 'Klee-One',
+          fontFamily: 'Solway',
           fontWeight: 400,
-          color: 'inherit',
+          color: 'white',
           textDecoration: 'none',
         }}
       >

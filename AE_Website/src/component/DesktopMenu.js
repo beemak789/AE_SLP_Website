@@ -24,7 +24,7 @@ export const DesktopMenu = ({ handleCloseNavMenu }) => {
           smooth={true}
           duration={500}
           to={link.to}
-          style={{ fontFamily: 'Klee-One' }}
+          style={{ fontFamily: 'Solway' }}
         >
           {link.name}
         </Link>

@@ -8,6 +8,12 @@ export const links = [
   {
     // className: styles.className,
     // activeClassName: styles.activeClassName,
+    to: 'philosophy',
+    name: 'Philosophy',
+  },
+  {
+    // className: styles.className,
+    // activeClassName: styles.activeClassName,
     to: 'services',
     name: 'Services',
   },

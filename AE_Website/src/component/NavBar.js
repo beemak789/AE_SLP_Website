@@ -41,10 +41,10 @@ const Navbar = () => {
         >
           <img
             className='nav-leaf-icon'
-            src='/leafIcon.png'
+            src='/logo.jpg'
             alt='leafIcon logo'
-            width={26}
-            height={29}
+            width={50}
+            height={50}
           ></img>
           <Typography
           className='nav-logo-text'
@@ -57,7 +57,7 @@ const Navbar = () => {
               display: { xs: 'none', md: 'flex' },
             }}
           >
-            Speak Easy with Brandy
+            Full Bloom Speech
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
