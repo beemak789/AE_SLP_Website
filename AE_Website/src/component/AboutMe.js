@@ -11,8 +11,9 @@ const AboutMe = () => {
           className='profile-photo'
         ></img>
         <div className='about-me-text'>
+        <p className='amy-title'>Amy Elder, Speech Language Pathologist</p>
           <p className='about-me-paragraph'>
-           <i>Amy Elder</i>, owner and ASHA certified speech language pathologist at
+           Amy Elder, owner and ASHA certified speech language pathologist at
             Full Bloom Speech Language Pathology earned both her undergraduate
             and graduate degrees from Ohio University in Athens, OH. She has
             been a licensed speech language pathologist since 2006 and

@@ -7,11 +7,11 @@ import Footer from './Footer';
 
 const LandingPage = () => {
   return (
-    <div style={{position: 'relative'}}>
+    <div>
       <Navbar />
       <AboutMe />
       <Services />
-      <ContactMe />
+      {/* <ContactMe /> */}
       <Footer />
     </div>
   );
