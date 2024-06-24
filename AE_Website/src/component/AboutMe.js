@@ -126,6 +126,6 @@ const PhilosophyText = styled.div`
   .header-2 {
     font-size: 20px;
     text-align: center;
-    color: #8e3e63;
+    color: #008080;
   }
 `;
