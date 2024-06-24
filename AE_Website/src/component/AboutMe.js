@@ -3,17 +3,13 @@ import styled from 'styled-components';
 
 const AboutMe = () => {
   return (
-    <div className='about-me-container'>
-      <div className='img-aboutme-container'>
-        <img
-          src='/amyElderProfile.jpg'
-          alt='profile logo'
-          className='profile-photo'
-        ></img>
-        <div className='about-me-text'>
-        <p className='amy-title'>About Us</p>
-          <p className='about-me-paragraph'>
-           Amy Elder, owner and ASHA certified speech language pathologist at
+    <AboutMeContainer>
+      <AboutMeSection>
+        <img src='/amyElderProfile.jpg' alt='profile-pic'></img>
+        <AboutMeParagraphContainer>
+          <p className='header-1'>About Us</p>
+          <p className='paragraph'>
+            Amy Elder, owner and ASHA certified speech language pathologist at
             Full Bloom Speech Language Pathology earned both her undergraduate
             and graduate degrees from Ohio University in Athens, OH. She has
             been a licensed speech language pathologist since 2006 and
@@ -36,14 +32,16 @@ const AboutMe = () => {
             apraxia of speech, developmental language disorder, late talkers,
             gestalt language processing, and pragmatic language.
           </p>
-        </div>
-      </div>
+        </AboutMeParagraphContainer>
+      </AboutMeSection>
 
-      <div className='philo-img-container'>
-      <img src='/family.jpg' className='family-photo' />
-        <div className='philosophy-container'>
-          <p className='philo-text'><b>Our Philosophy</b></p>
-          <p>
+      <OurPhilosophyContainer>
+        <img src='/family.jpg' />
+        <PhilosophyText>
+          <p className='header-2'>
+            <b>Our Philosophy</b>
+          </p>
+          <p className='paragraph'>
             At Full Bloom Speech Language Pathology, we believe in nurturing the
             communication skills of our youngest clients, laying the foundation
             for a lifetime of success. We understand the unique needs of
@@ -52,11 +50,82 @@ const AboutMe = () => {
             is centered around compassion, expertise, and a deep commitment to
             helping children reach their full potential.
           </p>
-        </div>
-
-      </div>
-    </div>
+        </PhilosophyText>
+      </OurPhilosophyContainer>
+    </AboutMeContainer>
   );
 };
 
 export default AboutMe;
+
+const AboutMeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: white;
+  width: 100%;
+`;
+
+const AboutMeSection = styled.div`
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  padding-left: 4rem;
+  align-items: center;
+
+  img {
+    width: 28%;
+    height: 28%;
+    border-radius: 5px;
+    margin-top: 3.5rem;
+  }
+`;
+
+const AboutMeParagraphContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  .header-1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+    color: #8e3e63;
+  }
+  .paragraph {
+    font-size: 12px;
+    padding: 1.2rem;
+    font-size: 15px;
+    line-height: 16pt;
+    font-weight: 100;
+    text-align: start;
+    margin-top: -2rem;
+  }
+`;
+
+const OurPhilosophyContainer = styled.div`
+  display: flex;
+  background-color: white;
+  padding: 3rem;
+  gap: 2rem;
+
+  img {
+    height: 30%;
+    width: 31%;
+    border: 2px;
+  }
+`;
+
+const PhilosophyText = styled.div`
+  text-align: start;
+  font-size: 15px;
+  line-height: 16pt;
+  font-weight: 100;
+  padding: 1rem;
+  margin-top: -2rem;
+
+  .header-2 {
+    font-size: 20px;
+    text-align: center;
+    color: #8e3e63;
+  }
+`;
