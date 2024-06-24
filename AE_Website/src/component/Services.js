@@ -1,34 +1,42 @@
 import React from 'react';
-import { Link } from 'react-scroll';
-import ServicesTable from './ServicesTable';
+// import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import ServiceTable from './ServiceTable';
 
 const Services = () => {
   return (
-    <ServicesContainer >
-        <p >Our Services</p>
-
-        <ServicesTable />
-
+    <ServicesContainer>
+      <ServiceTableContainer >
+        <p className='our-services-header'>Our Services</p>
+        <ServiceTable />
+      </ServiceTableContainer>
     </ServicesContainer>
   );
 };
-
-export default Services;
 
 const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: white;
-  border: 2px solid purple;
+  ${'' /* border: 2px solid purple; */}
 
-  p {
-    font-size: 22px;
+  .our-services-header {
+    font-size: 30px;
     font-weight: 300pt;
-    border: 2px solid red;
     text-align: center;
     padding: 1rem;
+    line-height: 10px;
+    margin: auto;
+    ${'' /* border: 2px solid green; */}
+    margin-bottom: 2rem;
+    width: 100%;
   }
+`;
 
+const ServiceTableContainer = styled.div`
+padding: 2rem;
+border: 2px solid green;
 `
+
+export default Services;
