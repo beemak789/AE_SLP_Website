@@ -6,7 +6,7 @@ import ServiceTable from './ServiceTable';
 const Services = () => {
   return (
     <ServicesContainer>
-      <ServiceTableContainer >
+      <ServiceTableContainer>
         <p className='our-services-header'>Our Services</p>
         <ServiceTable />
       </ServiceTableContainer>
@@ -22,21 +22,22 @@ const ServicesContainer = styled.div`
   ${'' /* border: 2px solid purple; */}
 
   .our-services-header {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300pt;
     text-align: center;
     padding: 1rem;
     line-height: 10px;
     margin: auto;
-    ${'' /* border: 2px solid green; */}
     margin-bottom: 2rem;
     width: 100%;
+    color: #8e3e63;
+    font-weight: 500;
   }
 `;
 
 const ServiceTableContainer = styled.div`
-padding: 2rem;
-border: 2px solid green;
-`
+  padding: 2rem;
+  ${'' /* border: 2px solid green; */}
+`;
 
 export default Services;
