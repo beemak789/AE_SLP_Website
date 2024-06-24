@@ -7,7 +7,7 @@ const AboutMe = () => {
       <AboutMeSection>
         <img src='/amyElderProfile.jpg' alt='profile-pic'></img>
         <AboutMeParagraphContainer>
-          <p className='header-1'>About Us</p>
+          <p className='header-1'>Who We Are</p>
           <p className='paragraph'>
             Amy Elder, owner and ASHA certified speech language pathologist at
             Full Bloom Speech Language Pathology earned both her undergraduate

@@ -1,44 +1,34 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import ServicesTable from './ServicesTable';
+import styled from 'styled-components';
 
 const Services = () => {
   return (
-    <div className='services services-container'>
-      <div className='services-promo-text'>
-        <p className='free-consultation-header'>Free 30-Minute Consultation</p>
-        <p>
-          <em>Discounted </em> session rates with referrals
-        </p>
-        <p></p>
-        <p className='call-or-email-text'>
-          <Link
-            spy={true}
-            smooth={true}
-            duration={500}
-            to='contactMe'
-            style={{ cursor: 'pointer' }}
-          >
-            Call or email{' '}
-          </Link>
-          for more information regarding{' '}
-          <b>
-            <em>rates</em>
-          </b>
-        </p>
-      </div>
-
-      <div className='what-i-do-text'>
-        <em className="what-i-do-header"> What I Do</em>
-        <p className='travel-to-you-text'>
-          Travel to You • Brooklyn & Manhattan • Treatment and Evaluation •
-          Weekday & Weekends
-        </p>
+    <ServicesContainer >
+        <p >Our Services</p>
 
         <ServicesTable />
-      </div>
-    </div>
+
+    </ServicesContainer>
   );
 };
 
 export default Services;
+
+const ServicesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border: 2px solid purple;
+
+  p {
+    font-size: 22px;
+    font-weight: 300pt;
+    border: 2px solid red;
+    text-align: center;
+    padding: 1rem;
+  }
+
+`
