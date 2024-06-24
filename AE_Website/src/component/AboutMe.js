@@ -11,7 +11,7 @@ const AboutMe = () => {
           className='profile-photo'
         ></img>
         <div className='about-me-text'>
-        <p className='amy-title'>Amy Elder, Speech Language Pathologist</p>
+        <p className='amy-title'>About Us</p>
           <p className='about-me-paragraph'>
            Amy Elder, owner and ASHA certified speech language pathologist at
             Full Bloom Speech Language Pathology earned both her undergraduate
@@ -40,8 +40,9 @@ const AboutMe = () => {
       </div>
 
       <div className='philo-img-container'>
+      <img src='/family.jpg' className='family-photo' />
         <div className='philosophy-container'>
-          <p className='philo-text' style={{ fontSize: '1.5rem' }}><b>Our Philosophy</b></p>
+          <p className='philo-text'><b>Our Philosophy</b></p>
           <p>
             At Full Bloom Speech Language Pathology, we believe in nurturing the
             communication skills of our youngest clients, laying the foundation
@@ -52,7 +53,7 @@ const AboutMe = () => {
             helping children reach their full potential.
           </p>
         </div>
-        <img src='/family.jpg' className='family-photo' />
+
       </div>
     </div>
   );
