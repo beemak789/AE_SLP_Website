@@ -75,8 +75,8 @@ const AboutMeSection = styled.div`
   align-items: center;
 
   img {
-    width: 28%;
-    height: 28%;
+    width: 35%;
+    height: 35%;
     border-radius: 5px;
     margin-top: 3.5rem;
   }
@@ -106,11 +106,11 @@ const OurPhilosophyContainer = styled.div`
   display: flex;
   background-color: white;
   padding: 3rem;
-  gap: 2rem;
+  gap: 1.5rem;
 
   img {
-    height: 30%;
-    width: 31%;
+    height: 39%;
+    width: 39%;
     border: 2px;
   }
 `;

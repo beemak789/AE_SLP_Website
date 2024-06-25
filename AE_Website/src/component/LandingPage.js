@@ -4,6 +4,7 @@ import AboutMe from './AboutMe';
 import Services from './Services';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
+import Testimonials from './Testimonials';
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <Navbar />
       <AboutMe />
       <Services />
+      <Testimonials/>
       {/* <ContactMe /> */}
       <Footer />
     </div>

@@ -48,7 +48,7 @@ const ServiceTable = () => {
     <>
       <ThemeProvider theme={theme}>
         <TableParent>
-          <TableContainer >
+          <TableContainer>
             <TableTitle background='#8e3e63' fontSize='20px' color='white'>
               Evaluations
             </TableTitle>
@@ -72,7 +72,7 @@ const ServiceTable = () => {
             </Table>
           </TableContainer>
 
-          <TableContainer style={{borderLeft: '1px solid gray'}}>
+          <TableContainer style={{borderLeft: '1px solid lightGray'}}>
             <TableTitle background='#8E3E63' fontSize='20px' color='white'>
               Therapy
             </TableTitle>
@@ -82,7 +82,7 @@ const ServiceTable = () => {
                 padding: '0.8rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
               Therapy sessions include direct treatment time and consultation
@@ -117,20 +117,21 @@ const ServiceTable = () => {
                 marginTop: '1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
               Consultative services including additional requested paperwork,
               requested meetings with parents, collaboration with other
               professionals will be charged at the hourly rate of $125/hour.{' '}
             </p>
+
             <p
               style={{
                 padding: '0.8rem',
                 marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
               Most sessions are in our clinic space; however, occasional home or
@@ -141,10 +142,10 @@ const ServiceTable = () => {
             <p
               style={{
                 padding: '0.8rem',
-
+                marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
               Full Bloom Speech Language Pathology offers private pay/self pay
@@ -162,7 +163,7 @@ const ServiceTable = () => {
                 marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
               You can pay via cash, or check at the beginning of your
@@ -175,6 +176,7 @@ const ServiceTable = () => {
               services, and payment to us in full is required regardless of the
               final determination of coverage by your carrier.
             </p>
+
           </TableContainer>
         </TableParent>
       </ThemeProvider>
@@ -206,7 +208,7 @@ const TherapyRatesContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 55%;
   border-radius: 2px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background: #F6FAB9;

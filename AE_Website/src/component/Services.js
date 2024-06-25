@@ -19,7 +19,6 @@ const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   background-color: white;
-  ${'' /* border: 2px solid purple; */}
 
   .our-services-header {
     font-size: 25px;
