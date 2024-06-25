@@ -5,6 +5,7 @@ import Services from './Services';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
+import Resources from './Resources';
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <AboutMe />
       <Services />
       <Testimonials/>
+      <Resources/>
       {/* <ContactMe /> */}
       <Footer />
     </div>

@@ -1,31 +1,39 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material';
 
-const bull = (
-  <Box
-    component='span'
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Solway',
+    fontWeightRegular: 100,
+    fontSize: '8',
+  },
+});
 
-export default function BasicCard() {
+var cardStyle = {
+  width: '30vw',
+  transitionDuration: '0.3s',
+  height: '35vw',
+  padding: '1rem'
+}
+
+const BasicCard = ({ testimonial}) => {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <ThemeProvider theme={theme}>
+    <Card sx={{ minWidth: 100 }} style={cardStyle} spacing={10}>
       <CardContent>
         <Typography variant='h5' component='div'>
-          be{bull}nev{bull}o{bull}lent
+         {testimonial}
         </Typography>
       </CardContent>
-      <CardActions>
+      {/* <CardActions>
         <Button size='small'>Show More</Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
+    </ThemeProvider>
   );
 }
+
+export default BasicCard;

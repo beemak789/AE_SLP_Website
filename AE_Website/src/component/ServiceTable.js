@@ -212,5 +212,5 @@ const TherapyRatesContainer = styled.div`
   border-radius: 2px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background: #F6FAB9;
-  ${'' /* margin-left: 0.5rem; */}
+  color: #454A05;
 `;

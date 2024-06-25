@@ -57,7 +57,7 @@ const Navbar = () => {
               display: { xs: 'none', md: 'flex' },
             }}
           >
-            Full Bloom Speech
+            We All Bloom Differently
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
