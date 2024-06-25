@@ -6,10 +6,10 @@ import ServiceTable from './ServiceTable';
 const Services = () => {
   return (
     <ServicesContainer>
-      <ServiceTableContainer>
+      <ServiceSection>
         <p className='our-services-header'>Our Services</p>
         <ServiceTable />
-      </ServiceTableContainer>
+      </ServiceSection>
     </ServicesContainer>
   );
 };
@@ -35,9 +35,9 @@ const ServicesContainer = styled.div`
   }
 `;
 
-const ServiceTableContainer = styled.div`
+const ServiceSection = styled.div`
   padding: 2rem;
-  ${'' /* border: 2px solid green; */}
+  border: 2px solid yellow;
 `;
 
 export default Services;

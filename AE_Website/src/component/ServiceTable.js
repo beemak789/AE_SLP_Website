@@ -6,11 +6,13 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { createTheme, ThemeProvider } from '@mui/material';
+import styled from 'styled-components';
 
 const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
     fontWeightRegular: 100,
+    fontSize: '15',
   },
 });
 
@@ -19,8 +21,8 @@ const ServiceTable = () => {
     return { services, description, price };
   };
 
-  const createData2 = (services, sessionLength, price) => {
-    return { services, sessionLength, price };
+  const createData2 = (sessionLength, price) => {
+    return { sessionLength, price };
   };
   const rows1 = [
     createData1(
@@ -36,55 +38,175 @@ const ServiceTable = () => {
   ];
 
   const rows2 = [
-    createData2('Direct Therapy', '30 minutes', '$62.50'),
-    createData2('Direct Therapy', '45 minutes', '$93.75'),
+    createData2('30 minutes', '$62.50'),
+    createData2('45 minutes', '$93.75'),
 
-    createData2('Direct Therapy', '60 minutes', '$125'),
+    createData2('60 minutes', '$125.00'),
   ];
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <TableContainer>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell align='left'>Evaluation Service</TableCell>
-                <TableCell align='left'>Description</TableCell>
-                <TableCell align='left'>Price</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows1.map((row, id) => (
-                <TableRow key={id}>
-                  <TableCell width='25%'>{row.services}</TableCell>
-                  <TableCell width='60%'>{row.description}</TableCell>
-                  <TableCell width='20%'>{row.price}</TableCell>
+        <TableParent>
+          <TableContainer style={{ border: '2px solid green' }}>
+            <TableTitle background='#008080' fontSize='20px' color='white'>
+              Evaluations
+            </TableTitle>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell align='center'>Evaluation Service</TableCell>
+                  <TableCell align='left'>Description</TableCell>
+                  <TableCell align='center'>Price</TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-            <TableHead>
-              <TableRow>
-                <TableCell align='left'>Therapy Service</TableCell>
-                <TableCell align='left'>Session Length</TableCell>
-                <TableCell align='left'>Price</TableCell>
-              </TableRow>
-            </TableHead>
+              </TableHead>
+              <TableBody>
+                {rows1.map((row, id) => (
+                  <TableRow key={id}>
+                    <TableCell width='25%'>{row.services}</TableCell>
+                    <TableCell width='60%'>{row.description}</TableCell>
+                    <TableCell width='20%'>{row.price}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
 
-            <TableBody>
-              {rows2.map((row, id) => (
-                <TableRow key={id}>
-                  <TableCell width='25%'>{row.services}</TableCell>
-                  <TableCell width='60%'>{row.sessionLength}</TableCell>
-                  <TableCell width='20%'>{row.price}</TableCell>
+          <TableContainer style={{ border: '2px solid red' }}>
+            <TableTitle background='#8E3E63' fontSize='20px' color='white'>
+              Therapy
+            </TableTitle>
+
+            <p
+              style={{
+                padding: '0.8rem',
+                textAlign: 'start',
+                fontWeight: '100',
+                fontSize: '14px',
+              }}
+            >
+              Therapy sessions include direct treatment time and consultation
+              with parents including carryover activities for home practice. We
+              bill by the amount of time we spend with the child and the time we
+              consult with the parent. Typically, our appointments are 45
+              minutes; however, 30 and 60 minute sessions may be considered if
+              deemed appropriate for the child.
+            </p>
+
+            <TherapyRatesContainer>
+              <TableHead>
+                <TableRow>
+                  <TableCell align='left'>Session Length</TableCell>
+                  <TableCell align='left'>Price</TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+              </TableHead>
+
+              <TableBody>
+                {rows2.map((row, id) => (
+                  <TableRow key={id}>
+                    <TableCell width='90%'>{row.sessionLength}</TableCell>
+                    <TableCell width='90%'>{row.price}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </TherapyRatesContainer>
+
+            <p
+              style={{
+                padding: '0.8rem',
+                marginTop: '1rem',
+                textAlign: 'start',
+                fontWeight: '100',
+                fontSize: '14px',
+              }}
+            >
+              Consultative services including additional requested paperwork,
+              requested meetings with parents, collaboration with other
+              professionals will be charged at the hourly rate of $125/hour.{' '}
+            </p>
+            <p
+              style={{
+                padding: '0.8rem',
+                marginTop: '-1rem',
+                textAlign: 'start',
+                fontWeight: '100',
+                fontSize: '14px',
+              }}
+            >
+              Most sessions are in our clinic space; however, occasional home or
+              school visits may be considered. If this is agreed upon by the SLP
+              a travel fee will be included and agreed upon prior.
+            </p>
+
+            <p
+              style={{
+                padding: '0.8rem',
+
+                textAlign: 'start',
+                fontWeight: '100',
+                fontSize: '14px',
+              }}
+            >
+              Full Bloom Speech Language Pathology offers private pay/self pay
+              services thus we are considered an out of network provider and do
+              not bill to your insurance. We encourage you to file your claim
+              and will provide a superbill upon request. You will be required to
+              pay for therapy and evaluations at the time of service. We require
+              a card on file which is kept secure in our electronic medical
+              record system, Simple Practice.
+            </p>
+
+            <p
+              style={{
+                padding: '0.8rem',
+                marginTop: '-1rem',
+                textAlign: 'start',
+                fontWeight: '100',
+                fontSize: '14px',
+              }}
+            >
+              You can pay via cash, or check at the beginning of your
+              appointment, or your card will be charged following each therapy
+              visit. If you choose to submit your superbill to your insurance
+              company for reimbursement, it is your responsibility to follow up
+              on reimbursement with your insurance provider. Full Bloom Speech
+              Language Pathology cannot make any representation that your
+              insurance company will reimburse you in part or in full for our
+              services, and payment to us in full is required regardless of the
+              final determination of coverage by your carrier.
+            </p>
+          </TableContainer>
+        </TableParent>
       </ThemeProvider>
     </>
   );
 };
 
 export default ServiceTable;
+
+const TableParent = styled.div`
+  border: 2px solid purple;
+  display: flex;
+  margin-top: -1rem;
+`;
+
+const TableTitle = styled.p`
+  font-size: ${(props) => props.fontSize};
+  background: ${(props) => props.background};
+  color: ${(props) => props.color};
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+`;
+
+const TherapyRatesContainer = styled.div`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: #F6FAB9;
+  ${'' /* margin-left: 0.5rem; */}
+`;
