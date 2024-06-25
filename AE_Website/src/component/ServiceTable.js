@@ -48,8 +48,8 @@ const ServiceTable = () => {
     <>
       <ThemeProvider theme={theme}>
         <TableParent>
-          <TableContainer style={{ border: '2px solid green' }}>
-            <TableTitle background='#008080' fontSize='20px' color='white'>
+          <TableContainer >
+            <TableTitle background='#8e3e63' fontSize='20px' color='white'>
               Evaluations
             </TableTitle>
             <Table>
@@ -72,7 +72,7 @@ const ServiceTable = () => {
             </Table>
           </TableContainer>
 
-          <TableContainer style={{ border: '2px solid red' }}>
+          <TableContainer style={{borderLeft: '1px solid gray'}}>
             <TableTitle background='#8E3E63' fontSize='20px' color='white'>
               Therapy
             </TableTitle>
@@ -185,9 +185,11 @@ const ServiceTable = () => {
 export default ServiceTable;
 
 const TableParent = styled.div`
-  border: 2px solid purple;
+  ${'' /* border: 2px solid purple; */}
   display: flex;
   margin-top: -1rem;
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 `;
 
 const TableTitle = styled.p`

@@ -37,7 +37,6 @@ const ServicesContainer = styled.div`
 
 const ServiceSection = styled.div`
   padding: 2rem;
-  border: 2px solid yellow;
 `;
 
 export default Services;
