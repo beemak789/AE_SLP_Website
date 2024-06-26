@@ -49,7 +49,7 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-            <TableTitle background='#8e3e63' fontSize='20px' color='white'>
+            <TableTitle background='#3E8E69' fontSize='20px' color='white'>
               Evaluations
             </TableTitle>
             <Table>
@@ -73,7 +73,7 @@ const ServiceTable = () => {
           </TableContainer>
 
           <TableContainer style={{borderLeft: '1px solid lightGray'}}>
-            <TableTitle background='#8E3E63' fontSize='20px' color='white'>
+            <TableTitle background='#3E8E69' fontSize='20px' color='white'>
               Therapy
             </TableTitle>
 
@@ -94,21 +94,23 @@ const ServiceTable = () => {
             </p>
 
             <TherapyRatesContainer>
+
               <TableHead>
                 <TableRow>
-                  <TableCell align='left'>Session Length</TableCell>
-                  <TableCell align='left'>Price</TableCell>
+                  <TableCell style={{borderBottom: 'none'}} align='left'>Session Length</TableCell>
+                  <TableCell  style={{borderBottom: 'none'}} align='left'>Price</TableCell>
                 </TableRow>
               </TableHead>
 
               <TableBody>
                 {rows2.map((row, id) => (
                   <TableRow key={id}>
-                    <TableCell width='90%'>{row.sessionLength}</TableCell>
-                    <TableCell width='90%'>{row.price}</TableCell>
+                    <TableCell  style={{borderBottom: 'none'}} width='90%'>{row.sessionLength}</TableCell>
+                    <TableCell style={{borderBottom: 'none'}} width='90%'>{row.price}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
+
             </TherapyRatesContainer>
 
             <p
@@ -209,8 +211,7 @@ const TherapyRatesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 55%;
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  background: #F6FAB9;
-  color: #454A05;
+  background:#C983A3;
 `;

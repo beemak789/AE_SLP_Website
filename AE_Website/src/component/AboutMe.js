@@ -70,8 +70,7 @@ const AboutMeContainer = styled.div`
 const AboutMeSection = styled.div`
   display: flex;
   gap: 2rem;
-  padding: 1rem;
-  padding-left: 4rem;
+  padding: 2rem;
   align-items: center;
 
   img {
@@ -105,13 +104,14 @@ const AboutMeParagraphContainer = styled.div`
 const OurPhilosophyContainer = styled.div`
   display: flex;
   background-color: white;
-  padding: 3rem;
+  padding: 2rem;
   gap: 1.5rem;
 
   img {
-    height: 39%;
-    width: 39%;
+    height: 35%;
+    width: 35%;
     border: 2px;
+    border-radius: 5px;
   }
 `;
 
@@ -126,6 +126,6 @@ const PhilosophyText = styled.div`
   .header-2 {
     font-size: 20px;
     text-align: center;
-    color: #008080;
+    color: #3E8E69;
   }
 `;
