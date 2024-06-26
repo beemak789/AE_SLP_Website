@@ -50,7 +50,7 @@ const ResourcesContainer = styled.div`
     --b: 6px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/
     --g: 10px; /* control the gap */
-    --c: #8e3e63;
+    --c: #008080;
 
     width: fit-content;
     padding: 0 1em;
@@ -87,7 +87,8 @@ const SingleResourceCard = styled.div`
   background: white;
   color: black;
   display: flex;
-  line-height: 16pt;
+  line-height: 15pt;
+  margin-top: -1rem;
 
   .resource-title {
     text-align: center;

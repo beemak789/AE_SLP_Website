@@ -40,7 +40,6 @@ const ServiceTable = () => {
   const rows2 = [
     createData2('30 minutes', '$62.50'),
     createData2('45 minutes', '$93.75'),
-
     createData2('60 minutes', '$125.00'),
   ];
 
@@ -49,7 +48,7 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-            <TableTitle background='#3E8E69' fontSize='20px' color='white'>
+            <TableTitle background='#008080' fontSize='20px' color='white'>
               Evaluations
             </TableTitle>
             <Table>
@@ -72,8 +71,8 @@ const ServiceTable = () => {
             </Table>
           </TableContainer>
 
-          <TableContainer style={{borderLeft: '1px solid lightGray'}}>
-            <TableTitle background='#3E8E69' fontSize='20px' color='white'>
+          <TableContainer style={{ borderLeft: '1px solid lightGray' }}>
+            <TableTitle background='#008080' fontSize='20px' color='white'>
               Therapy
             </TableTitle>
 
@@ -94,23 +93,29 @@ const ServiceTable = () => {
             </p>
 
             <TherapyRatesContainer>
-
               <TableHead>
                 <TableRow>
-                  <TableCell style={{borderBottom: 'none'}} align='left'>Session Length</TableCell>
-                  <TableCell  style={{borderBottom: 'none'}} align='left'>Price</TableCell>
+                  <TableCell style={{ borderBottom: 'none' }} align='left'>
+                    Session Length
+                  </TableCell>
+                  <TableCell style={{ borderBottom: 'none' }} align='left'>
+                    Price
+                  </TableCell>
                 </TableRow>
               </TableHead>
 
-              <TableBody>
+              <TableBody >
                 {rows2.map((row, id) => (
                   <TableRow key={id}>
-                    <TableCell  style={{borderBottom: 'none'}} width='90%'>{row.sessionLength}</TableCell>
-                    <TableCell style={{borderBottom: 'none'}} width='90%'>{row.price}</TableCell>
+                    <TableCell style={{ borderBottom: 'none' }} width='90%'>
+                      {row.sessionLength}
+                    </TableCell>
+                    <TableCell style={{ borderBottom: 'none' }} width='90%'>
+                      {row.price}
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
-
             </TherapyRatesContainer>
 
             <p
@@ -178,7 +183,6 @@ const ServiceTable = () => {
               services, and payment to us in full is required regardless of the
               final determination of coverage by your carrier.
             </p>
-
           </TableContainer>
         </TableParent>
       </ThemeProvider>
@@ -189,11 +193,11 @@ const ServiceTable = () => {
 export default ServiceTable;
 
 const TableParent = styled.div`
-  ${'' /* border: 2px solid purple; */}
   display: flex;
-  margin-top: -1rem;
-  border-radius: 2px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 `;
 
 const TableTitle = styled.p`
@@ -212,6 +216,7 @@ const TherapyRatesContainer = styled.div`
   align-items: center;
   width: 55%;
   border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  background:#C983A3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: #3cacac;
 `;

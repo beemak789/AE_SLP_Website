@@ -32,7 +32,7 @@ const TestimonialsContainer = styled.div`
     --b: 6px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/
     --g: 10px; /* control the gap */
-    --c: #3E8E69;
+    --c: #008080;
 
     width: fit-content;
     padding: 0 1em;

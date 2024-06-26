@@ -1,5 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Box } from '@mui/material';
+
+const bull = (
+  <Box
+    component='span'
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
 
 const AboutMe = () => {
   return (
@@ -7,7 +17,7 @@ const AboutMe = () => {
       <AboutMeSection>
         <img src='/amyElderProfile.jpg' alt='profile-pic'></img>
         <AboutMeParagraphContainer>
-          <p className='header-1'>Who We Are</p>
+          <p className='header-1'>{bull} Who We Are {bull}</p>
           <p className='paragraph'>
             Amy Elder, owner and ASHA certified speech language pathologist at
             Full Bloom Speech Language Pathology earned both her undergraduate
@@ -39,7 +49,7 @@ const AboutMe = () => {
         <img src='/family.jpg' />
         <PhilosophyText>
           <p className='header-2'>
-            <b>Our Philosophy</b>
+            <b>{bull} Our Philosophy {bull}</b>
           </p>
           <p className='paragraph'>
             At Full Bloom Speech Language Pathology, we believe in nurturing the
@@ -126,6 +136,6 @@ const PhilosophyText = styled.div`
   .header-2 {
     font-size: 20px;
     text-align: center;
-    color: #3E8E69;
+    color: #008080;
   }
 `;
