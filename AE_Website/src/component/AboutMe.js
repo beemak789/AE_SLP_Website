@@ -84,8 +84,8 @@ const AboutMeSection = styled.div`
   align-items: center;
 
   img {
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
     border-radius: 5px;
     margin-top: 3.5rem;
   }
@@ -118,8 +118,8 @@ const OurPhilosophyContainer = styled.div`
   gap: 1.5rem;
 
   img {
-    height: 35%;
-    width: 35%;
+    height: 30%;
+    width: 30%;
     border: 2px;
     border-radius: 5px;
   }

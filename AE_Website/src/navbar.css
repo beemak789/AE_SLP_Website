@@ -7,21 +7,20 @@
 
 .nav-logo-text, .hidden-nav-logo-text {
   font-weight: 600px !important;
-  color: #F7ECF1 !important;
+  color: white !important;
   text-decoration: none;
   font-size: 20px !important;
   margin-left: 0.8rem !important;
   font-family: 'Solway' !important;
+  width: 100%;
 }
 
 
 .nav-links-container {
-  margin-left: 30%;
-}
-
-.links-text {
-  font-family: 'Solway';
-  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
 }
 
 .instagram-navbar {

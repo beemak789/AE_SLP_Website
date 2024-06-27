@@ -4,16 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 100%;
-  width: 100%;
   font-size: 32px;
   font-weight: bold;
-  font-family: 'Klee-One';
 }
 
 .contact-info-container {
   padding: 4rem;
-  background-color: #FFFAF4;
   font-family: 'Klee-One' !important;
   text-align: center;
 }
@@ -47,7 +43,6 @@
 
 .form-container {
   /* border: 2px solid brown; */
-  background: #FFFAF4;
   width: 100%;
 }
 
@@ -55,6 +50,7 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+border: 2px solid green;
 /* margin: auto; */
 }
 

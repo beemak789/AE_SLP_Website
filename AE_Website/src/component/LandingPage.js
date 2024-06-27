@@ -15,7 +15,7 @@ const LandingPage = () => {
       <Services />
       <Testimonials/>
       <Resources/>
-      {/* <ContactMe /> */}
+      <ContactMe />
       <Footer />
     </div>
   );

@@ -12,7 +12,16 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-scroll';
 import { links } from '../utils/links';
 import { Icon } from '@iconify/react';
+import { ThemeProvider, createTheme } from '@mui/material';
 // import { Link} from 'react-router-dom';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Solway',
+    fontWeightRegular: 100,
+    fontSize: '10',
+  },
+});
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -25,12 +34,8 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
 
-
   return (
-    <AppBar
-      position='static'
-      className='nav-bar-container'
-    >
+    <AppBar position='static' className='nav-bar-container'>
       <Container maxWidth='xl'>
         <Toolbar
           disableGutters
@@ -43,11 +48,11 @@ const Navbar = () => {
             className='nav-leaf-icon'
             src='/logo.jpg'
             alt='leafIcon logo'
-            width={50}
-            height={50}
+            width={45}
+            height={45}
           ></img>
           <Typography
-          className='nav-logo-text'
+            className='nav-logo-text'
             // variant='h6'
             noWrap
             component='a'
@@ -90,19 +95,26 @@ const Navbar = () => {
               }}
             >
               {links.map((link, idx) => (
-                <MenuItem key={idx} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>
-                    <Link spy={true} smooth={true} duration={500} to={link.to}>
-                      {link.name}
-                    </Link>
-                  </Typography>
-                </MenuItem>
+
+                  <MenuItem key={idx} onClick={handleCloseNavMenu}>
+                    <Typography >
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to={link.to}
+                      >
+                        {link.name}
+                      </Link>
+                    </Typography>
+                  </MenuItem>
+
               ))}
             </Menu>
           </Box>
 
           <Typography
-          className='hidden-nav-logo-text'
+            className='hidden-nav-logo-text'
             variant='h5'
             noWrap
             component='a'
@@ -116,35 +128,29 @@ const Navbar = () => {
             Speak Easy with Brandy
           </Typography>
           <Box
-            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}
             className='nav-links-container'
           >
             {links.map((link, idx) => (
               <Button
                 key={idx}
                 onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: 'black',
-                  display: 'block',
-                }}
               >
+
                 <Link
                   className='links-text'
                   spy={true}
                   smooth={true}
                   duration={500}
                   to={link.to}
+                  style={{color: 'white', fontFamily: 'Solway', fontSize: '13px'}}
                 >
                   {link.name}
                 </Link>
+
               </Button>
             ))}
-            <a href="https://instagram.com/speakeasywithbrandy?igshid=MzNlNGNkZWQ4Mg==">
-            <Icon icon='skill-icons:instagram' className='instagram-navbar'/>
-            </a>
-          </Box>
 
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
