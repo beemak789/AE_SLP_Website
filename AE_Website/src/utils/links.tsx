@@ -3,7 +3,7 @@ export const links = [
     // className: styles.className,
     // activeClassName: styles.activeClassName,
     to: 'aboutMe',
-    name: 'About Me',
+    name: 'About Us',
   },
   {
     // className: styles.className,
@@ -15,7 +15,7 @@ export const links = [
     // className: styles.className,
     // activeClassName: styles.activeClassName,
     to: 'contactMe',
-    name: 'Contact Me',
+    name: 'Contact Us',
   },
   {
     // className: styles.className,

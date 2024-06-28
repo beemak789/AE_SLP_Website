@@ -18,19 +18,45 @@ const Resources = () => {
       <h2 className='fancy'>Resources</h2>
 
       <ResourcesList>
-        {resources.map((resource, idx) => {
-          return (
-            <SingleResourceCard>
-              <div key={idx} className='single-resource-text'>
-                <div className='resource-title'>
-                  {' '}
-                  {bull} {resourceTitles[idx]} {bull}
-                </div>
-                {resource}{' '}
-              </div>
-            </SingleResourceCard>
-          );
-        })}
+        <p>
+          What is Speech Language Therapy and how can a Speech Language
+          Pathologist help? Pediatric speech language pathologists assess and
+          treat communication disorders and delays in children. These disorders
+          may affect various aspects of communication, including speech,
+          language, voice, fluency, and social communication skills. The goal of
+          pediatric speech therapy is to help children develop and improve their
+          communication abilities, enabling them to effectively express
+          themselves and interact with others. A speech-language pathologist
+          (SLP) works with children to address their specific needs and
+          challenges. Pediatric speech therapy may involve a range of
+          interventions and techniques, tailored to each child's age,
+          developmental level, and areas of difficulty. Some common areas
+          addressed in pediatric speech therapy include: Articulation: Helping
+          children produce speech sounds correctly. Early Intervention: Focused
+          on identifying and addressing speech and language delays or disorders
+          in children as early as possible to maximize their communication
+          potential. Language: Enhancing vocabulary, grammar, comprehension, and
+          expressive language skills. Fluency: Assisting children who stutter or
+          have other fluency disorders. Pragmatics: Improving social
+          communication skills, including turn-taking, eye contact, and
+          understanding social cues. Literacy: Supporting literacy development
+          for reading, writing, and spelling. Pediatric speech therapists use
+          various tools and activities, such as games, toys, books, and
+          technology, to engage children in therapy sessions and make learning
+          fun and interactive. Additionally, they collaborate with parents,
+          caregivers, teachers, and other professionals involved in the child's
+          care to provide a holistic approach to therapy and support ongoing
+          progress outside of therapy sessions. Overall, pediatric speech
+          therapy aims to empower children to communicate effectively, build
+          confidence, and achieve their full potential in social, academic, and
+          everyday settings. To learn more about pediatric speech language
+          therapy, visit the website of the American Speech-Language-Hearing
+          Association (ASHA). You may find the developmental milestone resources
+          particularly helpful when trying to determine if your child would
+          benefit from a speech language evaluation. Those milestones can be
+          found at this link:
+          https://www.asha.org/public/developmental-milestones/communication-milestones/.
+        </p>
       </ResourcesList>
     </ResourcesContainer>
   );

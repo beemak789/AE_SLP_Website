@@ -6,10 +6,11 @@ import ContactMe from './ContactMe';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Resources from './Resources';
+import styled from 'styled-components';
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <AboutMe />
       <Services />
@@ -17,8 +18,9 @@ const LandingPage = () => {
       <Resources/>
       <ContactMe />
       <Footer />
-    </div>
+    </>
   );
 };
 
 export default LandingPage;
+

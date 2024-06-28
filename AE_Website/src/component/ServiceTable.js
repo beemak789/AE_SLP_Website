@@ -17,8 +17,8 @@ const theme = createTheme({
 });
 
 const ServiceTable = () => {
-  const createData1 = (services, description, price) => {
-    return { services, description, price };
+  const createData1 = (services, description) => {
+    return { services, description };
   };
 
   const createData2 = (sessionLength, price) => {
@@ -38,9 +38,9 @@ const ServiceTable = () => {
   ];
 
   const rows2 = [
-    createData2('30 minutes', '$62.50'),
-    createData2('45 minutes', '$93.75'),
-    createData2('60 minutes', '$125.00'),
+    createData2('30 minutes'),
+    createData2('45 minutes'),
+    createData2('60 minutes'),
   ];
 
   return (
@@ -55,8 +55,7 @@ const ServiceTable = () => {
               <TableHead>
                 <TableRow>
                   <TableCell align='center'>Evaluation Service</TableCell>
-                  <TableCell align='left'>Description</TableCell>
-                  <TableCell align='center'>Price</TableCell>
+                  <TableCell align='center'>Description</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -81,7 +80,7 @@ const ServiceTable = () => {
                 padding: '0.8rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '13px',
+                fontSize: '15px',
               }}
             >
               Therapy sessions include direct treatment time and consultation
@@ -92,53 +91,13 @@ const ServiceTable = () => {
               deemed appropriate for the child.
             </p>
 
-            <TherapyRatesContainer>
-              <TableHead>
-                <TableRow>
-                  <TableCell style={{ borderBottom: 'none' }} align='left'>
-                    Session Length
-                  </TableCell>
-                  <TableCell style={{ borderBottom: 'none' }} align='left'>
-                    Price
-                  </TableCell>
-                </TableRow>
-              </TableHead>
-
-              <TableBody >
-                {rows2.map((row, id) => (
-                  <TableRow key={id}>
-                    <TableCell style={{ borderBottom: 'none' }} width='90%'>
-                      {row.sessionLength}
-                    </TableCell>
-                    <TableCell style={{ borderBottom: 'none' }} width='90%'>
-                      {row.price}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </TherapyRatesContainer>
-
-            <p
-              style={{
-                padding: '0.8rem',
-                marginTop: '1rem',
-                textAlign: 'start',
-                fontWeight: '100',
-                fontSize: '13px',
-              }}
-            >
-              Consultative services including additional requested paperwork,
-              requested meetings with parents, collaboration with other
-              professionals will be charged at the hourly rate of $125/hour.{' '}
-            </p>
-
             <p
               style={{
                 padding: '0.8rem',
                 marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '13px',
+                fontSize: '15px',
               }}
             >
               Most sessions are in our clinic space; however, occasional home or
@@ -152,7 +111,7 @@ const ServiceTable = () => {
                 marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '13px',
+                fontSize: '15px',
               }}
             >
               Full Bloom Speech Language Pathology offers private pay/self pay
@@ -170,7 +129,7 @@ const ServiceTable = () => {
                 marginTop: '-1rem',
                 textAlign: 'start',
                 fontWeight: '100',
-                fontSize: '13px',
+                fontSize: '15px',
               }}
             >
               You can pay via cash, or check at the beginning of your
@@ -194,6 +153,7 @@ export default ServiceTable;
 
 const TableParent = styled.div`
   display: flex;
+  flex-direction: column;
   margin-top: 1rem;
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -207,16 +167,4 @@ const TableTitle = styled.p`
   text-align: center;
   margin: auto;
   padding: 1rem;
-`;
-
-const TherapyRatesContainer = styled.div`
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 55%;
-  border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  background: #3cacac;
 `;

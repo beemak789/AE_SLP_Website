@@ -1,13 +1,17 @@
 .nav-bar-container {
-  background: #8E3E63 !important;
-  color: 'black' !important;
+  background: white !important;
   font-weight: 500 !important;
-  margin-top: 0;
+  color: black !important;
 }
 
+.contact-info {
+  background: #008080 !important;
+  width: 100% !important;
+  height: 25px;
+}
 .nav-logo-text, .hidden-nav-logo-text {
   font-weight: 600px !important;
-  color: white !important;
+  color: black !important;
   text-decoration: none;
   font-size: 20px !important;
   margin-left: 0.8rem !important;
@@ -21,6 +25,7 @@
   display: flex;
   justify-content: end;
   font-size: 20px;
+  color: black !important;
 }
 
 .instagram-navbar {
