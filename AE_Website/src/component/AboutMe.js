@@ -14,12 +14,16 @@ const bull = (
 const AboutMe = () => {
   return (
     <AboutMeContainer>
+      <h2 className='about-header'>About</h2>
+
       <AboutMeSection>
         <img src='/amyElderProfile.jpg' alt='profile-pic'></img>
         <AboutMeParagraphContainer>
-          <div className='header-container'>
+          <div className='clinician-header-container'>
             <p className='clinician-name'>Amy Elder</p>
-            <p className='clinician-title'><i>Owner and Speech-Language Pathologist</i></p>
+            <p className='clinician-title'>
+              <i>Owner and Speech-Language Pathologist</i>
+            </p>
           </div>
 
           <div className='paragraph'>
@@ -58,14 +62,14 @@ const AboutMe = () => {
         <img src='/family.jpg' />
         <PhilosophyText>
           <p className='header-2'>
-            <b>
-              Our Philosophy
-            </b>
+            <b>Our Philosophy</b>
           </p>
           <p className='paragraph'>
             At Full Bloom Speech Language Pathology, we believe in nurturing the
             communication skills of our youngest clients, laying the foundation
-            for a lifetime of success. We understand the unique needs of
+            for a lifetime of success. </p>
+
+            <p>We understand the unique needs of
             children and the critical role that communication plays in their
             development, relationships, and overall well-being. Our philosophy
             is centered around compassion, expertise, and a deep commitment to
@@ -86,6 +90,35 @@ const AboutMeContainer = styled.div`
   font-weight: bold;
   background-color: white;
   width: 100%;
+
+  .about-header {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Garamond Cursive';
+
+    --b: 0.5px; /* control the border thickness */
+    --w: 400px; /* control the width of the line*/
+    --g: -1px; /* control the gap */
+    --c: #023020;
+
+    width: fit-content;
+    padding: 0 1em;
+    line-height: 1.6em;
+    border: 1px solid;
+    color: #023020;
+    margin-top: 0.5rem;
+    background-size: 51% 100%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    border-image: linear-gradient(
+        #0000 calc(50% - var(--b) / 2),
+        var(--c) 0 calc(50% + var(--b) / 2),
+        #0000 0
+      )
+      1/0 var(--w) / calc(var(--w) + var(--g));
+    margin-inline: auto;
+  }
 `;
 
 const AboutMeSection = styled.div`
@@ -106,12 +139,12 @@ const AboutMeParagraphContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  .header-container {
+  .clinician-header-container {
     font-size: 24px;
     text-align: start;
     color: #8e3e63;
 
-    .clinician-name{
+    .clinician-name {
       margin: auto;
       margin-left: 1.2rem;
     }
@@ -146,12 +179,12 @@ const OurPhilosophyContainer = styled.div`
 `;
 
 const PhilosophyText = styled.div`
-   font-size: 12px;
-    padding: 1.2rem;
-    font-size: 13.5px;
-    line-height: 15pt;
-    font-weight: 100;
-    text-align: start;
+  font-size: 12px;
+  padding: 1.2rem;
+  font-size: 13.5px;
+  line-height: 15pt;
+  font-weight: 100;
+  text-align: start;
   margin-left: 1.2rem;
   margin-top: -2rem;
 

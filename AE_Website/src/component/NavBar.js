@@ -38,11 +38,11 @@ const Navbar = () => {
     <>
       <AppBar position='static' className='nav-bar-container'>
         <NavBarContainer>
-        <ContactInfoContainer >
-          <span>212-222-2222 </span>
-          <span>test@email.com</span>
-          <span></span>
-        </ContactInfoContainer>
+          <ContactInfoContainer >
+            <span>212-222-2222 </span>
+            <span>test@email.com</span>
+            <span></span>
+          </ContactInfoContainer>
           <Container maxWidth='xl'>
             <Toolbar
               disableGutters
@@ -55,8 +55,8 @@ const Navbar = () => {
                 className='nav-leaf-icon'
                 src='/logo.jpg'
                 alt='leafIcon logo'
-                width={380}
-                height={200}
+                width={250}
+                height={150}
                 style={{ marginLeft: '1rem' }}
               ></img>
 
@@ -120,26 +120,21 @@ const Navbar = () => {
               >
                 Speak Easy with Brandy
               </Typography>
-              <Box className='nav-links-container'>
+              <NavLinksContainer className='nav-links-container'>
                 {links.map((link, idx) => (
                   <Button key={idx} onClick={handleCloseNavMenu}>
-                    <Link
+                    <StyledLink
                       className='links-text'
                       spy={true}
                       smooth={true}
                       duration={500}
                       to={link.to}
-                      style={{
-                        color: '#26453e',
-                        fontFamily: 'Solway',
-                        fontSize: '16px',
-                      }}
                     >
                       {link.name}
-                    </Link>
+                    </StyledLink>
                   </Button>
                 ))}
-              </Box>
+              </NavLinksContainer>
             </Toolbar>
           </Container>
         </NavBarContainer>
@@ -165,3 +160,17 @@ const ContactInfoContainer = styled.div`
     font-weight: 100;
   }
 `
+const NavLinksContainer = styled(Box)`
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  color: black !important;
+`
+
+const StyledLink = styled(Link)`
+  color: #26453e;
+  font-family: 'Solway';
+  font-size: 16px;
+`
+
