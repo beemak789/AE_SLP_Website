@@ -5,7 +5,7 @@ import ServiceTable from './ServiceTable';
 
 const Services = () => {
   return (
-    <ServicesContainer>
+    <ServicesContainer name="services">
       <ServiceSection>
         <h2 className='fancy'>Our Services</h2>
         <h4 className="explore">Learn more about the services we provide at Full Bloom</h4>

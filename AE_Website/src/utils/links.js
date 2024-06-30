@@ -13,7 +13,7 @@ export const links = [
   },
 
   {
-    to: 'Resources',
+    to: 'resources',
     name: 'Resources',
   },
   {

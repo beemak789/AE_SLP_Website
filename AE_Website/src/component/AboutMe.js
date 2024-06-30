@@ -13,7 +13,7 @@ const bull = (
 
 const AboutMe = () => {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer name="aboutUs">
       <h2 className='about-header'>About</h2>
 
       <AboutMeSection>

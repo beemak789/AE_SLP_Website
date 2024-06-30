@@ -14,7 +14,7 @@ const theme = createTheme({
 const ContactMe = () => {
   return (
     <ThemeProvider theme={theme}>
-      <ContactMeContainer>
+      <ContactMeContainer name="contactUs">
         <h2 className='fancy'>Contact Us</h2>
 
         <ContactTextboxContainer>

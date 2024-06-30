@@ -18,7 +18,7 @@ const bull = (
 
 const Resources = () => {
   return (
-    <ResourcesContainer>
+    <ResourcesContainer name="resources">
       <h2 className='resources-header'>Resources</h2>
 
       <ResourcesList>

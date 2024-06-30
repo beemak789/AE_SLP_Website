@@ -8,7 +8,7 @@ import Paper from '@mui/material/Paper';
 
 const Testimonials = () => {
   return (
-    <TestimonialsContainer>
+    <TestimonialsContainer name="testimonials">
       <h2 className='fancy'>Testimonials</h2>
       <div className='hear-from'>
         <p>Our happy clients</p>
