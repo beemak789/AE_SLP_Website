@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { testimonials } from '../utils/clientinfo';
 import { Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+import Slide from '@mui/material/Slide';
+import Paper from '@mui/material/Paper';
 
 const Testimonials = () => {
   return (
@@ -14,7 +16,7 @@ const Testimonials = () => {
       </div>
       <TestimonialList>
         <Carousel
-        disabled
+          autoPlay={false}
           navButtonsProps={{
             style: {
               backgroundColor: '#023020',
@@ -34,6 +36,8 @@ const Testimonials = () => {
             );
           })}
         </Carousel>
+
+
       </TestimonialList>
     </TestimonialsContainer>
   );
@@ -42,7 +46,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const TestimonialsContainer = styled.div`
-position: relative;
+  height: fit-content;
   .fancy {
     font-size: 30px;
     font-weight: 300;

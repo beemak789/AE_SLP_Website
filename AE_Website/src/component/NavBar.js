@@ -12,8 +12,8 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-scroll';
 import { links } from '../utils/links';
 import { createTheme } from '@mui/material';
-// import { Link} from 'react-router-dom';
 import styled from 'styled-components';
+import { Icon } from '@iconify/react';
 
 const theme = createTheme({
   typography: {
@@ -38,14 +38,38 @@ const Navbar = () => {
     <>
       <AppBar position='static' className='nav-bar-container'>
         <NavBarContainer>
-          <ContactInfoContainer >
-            <span>212-222-2222 </span>
-            <span>test@email.com</span>
-            <span></span>
+          <ContactInfoContainer>
+            <div>
+              <span>(937)-369-6613</span>
+              <span>amye@fullbloomspeechlanguagepathology.com</span>
+              <span></span>
+            </div>
+
+
+            <div className='facebook-insta-container'>
+              <a href='https://instagram.com/speakeasywithbrandy?igshid=MzNlNGNkZWQ4Mg=='>
+                {' '}
+                <Icon icon='skill-icons:instagram' />
+              </a>
+              <FacebookIcon
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 256 256'
+            >
+              <path
+                fill='#1877f2'
+                d='M256 128C256 57.308 198.692 0 128 0S0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445'
+              ></path>
+              <path
+                fill='#fff'
+                d='m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z'
+              ></path>
+            </FacebookIcon>
+            </div>
+
+
           </ContactInfoContainer>
           <Container maxWidth='xl'>
             <Toolbar
-
               disableGutters
               sx={{
                 width: '100%',
@@ -153,6 +177,9 @@ const ContactInfoContainer = styled.div`
   background: #008080;
   width: 100%;
   height: 25px;
+  display: flex;
+  align-items: space-between;
+
   span {
     color: white;
     padding: 0.5rem;
@@ -160,7 +187,14 @@ const ContactInfoContainer = styled.div`
     margin-left: 2rem;
     font-weight: 100;
   }
-`
+
+  .facebook-insta-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 35rem;
+  }
+`;
 const NavLinksContainer = styled(Box)`
   width: 100%;
   display: flex;
@@ -168,11 +202,16 @@ const NavLinksContainer = styled(Box)`
   font-size: 20px;
   color: black !important;
   gap: 1.5rem;
-`
+`;
 
 const StyledLink = styled(Link)`
   color: #26453e;
   font-family: 'Solway';
   font-size: 16px;
-`
+`;
 
+const FacebookIcon = styled.svg`
+  height: 1.2em;
+  width: 1.2em;
+  margin-top: -0.2rem;
+`;

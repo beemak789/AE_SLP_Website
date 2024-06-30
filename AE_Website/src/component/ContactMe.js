@@ -54,6 +54,7 @@ const ContactMeContainer = styled.div`
   flex-direction: column;
   padding-right: 2rem;
   padding-left: 2rem;
+  padding-bottom: 3rem;
 
   .fancy {
     font-size: 35px;

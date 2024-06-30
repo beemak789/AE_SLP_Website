@@ -100,7 +100,7 @@ const Resources = () => {
 
         <ResourceBox>
           <h3 className='resource-header'>
-            Who are pediatric speech therapists and what do we do?
+            What do pediatric speech therapists do?
           </h3>
           <Accordion disableGutters>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -145,7 +145,6 @@ const ResourcesContainer = styled.div`
     font-size: 35px;
     font-weight: 300;
     text-align: center;
-    border: 2px solid red;
 
     --b: 0.5px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/
@@ -157,7 +156,7 @@ const ResourcesContainer = styled.div`
     line-height: 1.6em;
     border: 1px solid;
     color: #023020;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     background-size: 51% 100%;
     background-origin: border-box;
     background-repeat: no-repeat;
