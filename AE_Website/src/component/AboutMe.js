@@ -13,11 +13,11 @@ const bull = (
 
 const AboutMe = () => {
   return (
-    <AboutMeContainer name="aboutUs">
+    <AboutMeContainer name='aboutUs'>
       <h2 className='about-header'>About</h2>
 
       <AboutMeSection>
-        <img src='/amyElderProfile.jpg' alt='profile-pic'></img>
+        <ProfileImg src='/amyElderProfile.jpg' alt='profile-pic'></ProfileImg>
         <AboutMeParagraphContainer>
           <div className='clinician-header-container'>
             <p className='clinician-name'>Amy Elder</p>
@@ -59,7 +59,7 @@ const AboutMe = () => {
       </AboutMeSection>
 
       <OurPhilosophyContainer>
-        <img src='/family.jpg' />
+        <FamilyImg src='/family.jpg' />
         <PhilosophyText>
           <p className='header-2'>
             <b>Our Philosophy</b>
@@ -67,13 +67,15 @@ const AboutMe = () => {
           <p className='paragraph'>
             At Full Bloom Speech Language Pathology, we believe in nurturing the
             communication skills of our youngest clients, laying the foundation
-            for a lifetime of success. </p>
+            for a lifetime of success.{' '}
+          </p>
 
-            <p>We understand the unique needs of
-            children and the critical role that communication plays in their
-            development, relationships, and overall well-being. Our philosophy
-            is centered around compassion, expertise, and a deep commitment to
-            helping children reach their full potential.
+          <p>
+            We understand the unique needs of children and the critical role
+            that communication plays in their development, relationships, and
+            overall well-being. Our philosophy is centered around compassion,
+            expertise, and a deep commitment to helping children reach their
+            full potential.
           </p>
         </PhilosophyText>
       </OurPhilosophyContainer>
@@ -95,7 +97,7 @@ const AboutMeContainer = styled.div`
     font-size: 35px;
     font-weight: 300;
     text-align: center;
-    border: 2px solid red;
+    border: 2px solid green;
 
     --b: 0.5px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/
@@ -127,11 +129,22 @@ const AboutMeSection = styled.div`
   padding: 2rem;
   align-items: center;
 
-  img {
-    width: 40%;
-    height: 40%;
-    border-radius: 5px;
-    margin-top: -0.5rem;
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+`;
+
+const ProfileImg = styled.img`
+  width: 40%;
+  height: 40%;
+  border-radius: 5px;
+  margin-top: -0.5rem;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 90%;
+    height: 90%;
   }
 `;
 
@@ -170,11 +183,23 @@ const OurPhilosophyContainer = styled.div`
   background-color: white;
   padding: 2rem;
 
-  img {
-    height: 40%;
-    width: 40%;
-    border: 2px;
-    border-radius: 5px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+`;
+
+const FamilyImg = styled.img`
+  height: 40%;
+  width: 40%;
+  border: 2px;
+  border-radius: 5px;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 90%;
+    height: 90%;
   }
 `;
 

@@ -147,7 +147,6 @@ export default Navbar;
 const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   @media (min-width: 375px) and (max-width: 768px) {
     width: 100%;
   }
@@ -159,7 +158,6 @@ const ContactInfoContainer = styled.div`
   height: 25px;
   display: flex;
   align-items: space-between;
-  border: 2px solid yellow;
 
   span {
     color: white;
@@ -174,7 +172,6 @@ const ContactInfoContainer = styled.div`
     align-items: center;
     gap: 1em;
     margin-left: 35rem;
-    border: 2px solid blue;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -197,7 +194,6 @@ const NavLinksContainer = styled(Box)`
   font-size: 20px;
   color: black !important;
   gap: 1.5rem;
-  border: 2px solid black;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;
@@ -217,7 +213,5 @@ const FacebookIcon = styled.svg`
 `;
 
 // @media (min-width: 600px) and (max-width: 768px) {
-//   body {
-//     background-color: #de3163;
-//   }
+
 // }
