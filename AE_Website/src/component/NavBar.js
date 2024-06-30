@@ -45,6 +45,7 @@ const Navbar = () => {
           </ContactInfoContainer>
           <Container maxWidth='xl'>
             <Toolbar
+
               disableGutters
               sx={{
                 width: '100%',
@@ -55,8 +56,8 @@ const Navbar = () => {
                 className='nav-leaf-icon'
                 src='/logo.jpg'
                 alt='leafIcon logo'
-                width={250}
-                height={150}
+                width={300}
+                height={180}
                 style={{ marginLeft: '1rem' }}
               ></img>
 
@@ -163,9 +164,10 @@ const ContactInfoContainer = styled.div`
 const NavLinksContainer = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   font-size: 20px;
   color: black !important;
+  gap: 1.5rem;
 `
 
 const StyledLink = styled(Link)`

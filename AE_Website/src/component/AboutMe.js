@@ -95,7 +95,7 @@ const AboutMeContainer = styled.div`
     font-size: 35px;
     font-weight: 300;
     text-align: center;
-    font-family: 'Garamond Cursive';
+    border: 2px solid red;
 
     --b: 0.5px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/

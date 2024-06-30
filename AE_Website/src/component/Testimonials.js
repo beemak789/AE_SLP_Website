@@ -9,8 +9,8 @@ const Testimonials = () => {
     <TestimonialsContainer>
       <h2 className='fancy'>Testimonials</h2>
       <div className='hear-from'>
-        <p>Hear from our happy clients about</p>
-        <p className='about-tag'>about their experience with us</p>
+        <p>Our happy clients</p>
+        <p className='about-tag'>on their experience with us</p>
       </div>
       <TestimonialList>
         <Carousel

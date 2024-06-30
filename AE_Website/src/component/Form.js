@@ -14,7 +14,7 @@ const Form = () => {
       action='https://formsubmit.co/speechwithbrandy@gmail.com'
       method='POST'
     >
-      <h3 className='submit-question-header'>Submit A Question</h3>
+      <h3 className='submit-question-header'>Request an Evaluation</h3>
       <input
         type='hidden'
         name='_blacklist'
@@ -85,10 +85,13 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+border: 2px solid red;
+padding: 1rem;
 
   .submit-question-header {
     color: #008080;
-    font-size: 20px;
-    font-weight: 100pt;
+    font-size: 25px;
+    font-weight: 100;
   }
 `;

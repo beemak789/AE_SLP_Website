@@ -8,7 +8,7 @@ const Services = () => {
     <ServicesContainer>
       <ServiceSection>
         <h2 className='fancy'>Our Services</h2>
-        <h4 className="explore">Learn more about our therapy and evaluation services at Full Bloom</h4>
+        <h4 className="explore">Learn more about the services we provide at Full Bloom</h4>
         <ServiceTable />
       </ServiceSection>
     </ServicesContainer>
@@ -42,7 +42,6 @@ const ServiceSection = styled.div`
     font-size: 35px;
     font-weight: 300;
     text-align: center;
-    font-family: 'Garamond';
 
     --b: 0.5px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/

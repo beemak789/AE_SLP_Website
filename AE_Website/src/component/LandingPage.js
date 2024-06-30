@@ -14,8 +14,9 @@ const LandingPage = () => {
       <Navbar />
       <AboutMe />
       <Services />
-      <Testimonials/>
+
       <Resources/>
+      <Testimonials/>
       <ContactMe />
       <Footer />
     </>
