@@ -8,37 +8,35 @@ import Paper from '@mui/material/Paper';
 
 const Testimonials = () => {
   return (
-    <TestimonialsContainer name="testimonials">
+    <TestimonialsContainer name='testimonials'>
       <h2 className='fancy'>Testimonials</h2>
       <div className='hear-from'>
         <p>Our happy clients</p>
         <p className='about-tag'>on their experience with us</p>
       </div>
-      <TestimonialList>
-        <Carousel
-          autoPlay={false}
-          navButtonsProps={{
-            style: {
-              backgroundColor: '#023020',
-              borderRadius: 50,
-            },
-          }}
-          className='control-arrow'
-        >
-          {testimonials.map((testimonial, idx) => {
-            return (
-              <SingleTestimonialCard>
-                <img src='/quotation.png' height={10} width={10} />
-                <div key={idx} className='single-testimonial'>
-                  {testimonial}{' '}
-                </div>
-              </SingleTestimonialCard>
-            );
-          })}
-        </Carousel>
 
-
-      </TestimonialList>
+      <Carousel
+        autoPlay={false}
+        navButtonsAlwaysInvisible={false}
+        navButtonsProps={{
+          style: {
+            backgroundColor: '#023020',
+            borderRadius: 50,
+          },
+        }}
+        className='control-arrow'
+      >
+        {testimonials.map((testimonial, idx) => {
+          return (
+            <SingleTestimonialCard>
+              <img src='/quotation.png' height={10} width={10} />
+              <div key={idx} className='single-testimonial'>
+                {testimonial}{' '}
+              </div>
+            </SingleTestimonialCard>
+          );
+        })}
+      </Carousel>
     </TestimonialsContainer>
   );
 };
@@ -46,7 +44,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const TestimonialsContainer = styled.div`
-  height: fit-content;
+  height: 100%;
   .fancy {
     font-size: 30px;
     font-weight: 300;
@@ -88,21 +86,16 @@ const TestimonialsContainer = styled.div`
   }
 `;
 
-const TestimonialList = styled.div`
-  width: 70%;
-  font-size: 18px;
-  padding: 1rem;
-  font-weight: 100;
-  line-height: 16pt;
-  margin: auto;
-  margin-top: -2rem;
-`;
-
 const SingleTestimonialCard = styled.div`
   padding: 4rem;
   border-radius: 2px;
   background: white;
   color: black;
   display: flex;
-  gap: 10px;
+  gap: 7px;
+  margin: auto;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    margin: auto;
+  }
 `;

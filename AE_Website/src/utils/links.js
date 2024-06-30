@@ -7,14 +7,14 @@ export const links = [
     to: 'services',
     name: 'Services',
   },
-  {
-    to: 'testimonials',
-    name: 'Testimonials',
-  },
 
   {
     to: 'resources',
     name: 'Resources',
+  },
+  {
+    to: 'testimonials',
+    name: 'Testimonials',
   },
   {
     to: 'contactUs',

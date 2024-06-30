@@ -15,10 +15,10 @@ const LandingPage = () => {
        <AboutMe />
       <Services />
 
-      {/* <Resources/>
+      <Resources/>
       <Testimonials/>
       <ContactMe />
-      <Footer />   */}
+      {/* <Footer />   */}
     </>
   );
 };
