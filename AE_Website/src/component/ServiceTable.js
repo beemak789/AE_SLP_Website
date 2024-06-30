@@ -7,6 +7,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { makeStyles } from '@mui/styles';
+import Button from '@mui/material/Button';
 
 const theme = createTheme({
   typography: {
@@ -77,13 +78,15 @@ const ServiceTable = () => {
 
             {rows1.map((row, idx) => {
               return (
-                <Accordion
-                  disableGutters
-                >
+                <Accordion disableGutters>
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     {row.services}
                   </AccordionSummary>
+
                   <AccordionDetails>{row.description}</AccordionDetails>
+                  {idx === 0 ? (
+                    <Button style={{margin: '0.5rem', background: "#023020", color: "white"}}>Request an Evaluation</Button>
+                  ) : null}
                 </Accordion>
               );
             })}
@@ -99,7 +102,6 @@ const ServiceTable = () => {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls='panel1-content'
                     id='panel1-header'
-
                   >
                     {row.question}
                   </AccordionSummary>
