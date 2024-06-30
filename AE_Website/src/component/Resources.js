@@ -19,7 +19,7 @@ const bull = (
 const Resources = () => {
   return (
     <ResourcesContainer>
-      <h2 className='fancy'>Resources</h2>
+      <h2 className='resources-header'>Resources</h2>
 
       <ResourcesList>
         <ResourceBox>
@@ -141,10 +141,11 @@ const Resources = () => {
 export default Resources;
 
 const ResourcesContainer = styled.div`
-  .fancy {
-    font-size: 30px;
+  h2 {
+    font-size: 35px;
     font-weight: 300;
     text-align: center;
+    border: 2px solid red;
 
     --b: 0.5px; /* control the border thickness */
     --w: 400px; /* control the width of the line*/

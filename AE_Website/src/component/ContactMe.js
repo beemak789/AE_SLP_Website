@@ -52,9 +52,8 @@ export default ContactMe;
 const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 
   .fancy {
     font-size: 35px;

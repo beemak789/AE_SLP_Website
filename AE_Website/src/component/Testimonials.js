@@ -14,9 +14,8 @@ const Testimonials = () => {
       </div>
       <TestimonialList>
         <Carousel
-          fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
+        disabled
           navButtonsProps={{
-            // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
             style: {
               backgroundColor: '#023020',
               borderRadius: 50,
@@ -43,6 +42,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const TestimonialsContainer = styled.div`
+position: relative;
   .fancy {
     font-size: 30px;
     font-weight: 300;

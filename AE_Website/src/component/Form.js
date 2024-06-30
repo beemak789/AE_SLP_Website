@@ -25,33 +25,33 @@ const Form = () => {
         name='_autoresponse'
         value='your custom message'
       ></input>
-      <div className='input-field-container'>
+      <InputFieldContainer>
         <Input
+          className='input'
           placeholder='Name'
-          sx={{ marginLeft: '1rem' }}
           value={name}
           name='name'
           onInput={(event) => setName(event.target.value)}
           required
         />
         <Input
+          className='input'
           placeholder='Email'
-          sx={{ marginLeft: '1rem' }}
           value={email}
           name='email'
           onInput={(event) => setEmail(event.target.value)}
           required
         />
         <Input
+          className='input'
           placeholder='Phone Number'
-          sx={{ marginLeft: '1rem' }}
           value={phoneNumber}
           name='phoneNumber'
           onInput={(event) => setPhoneNumber(event.target.value)}
           required
         />
-      </div>
-      <div className='text-area-div'>
+      </InputFieldContainer>
+      <TextAreaContainer>
         <textarea
           id='message'
           name='message'
@@ -61,17 +61,12 @@ const Form = () => {
           onInput={(event) => setMessage(event.target.value)}
           className='text-area-container'
         ></textarea>
-      </div>
+      </TextAreaContainer>
       <Button
         className='submit-button'
         variant='contained'
         type='submit'
-        sx={{
-          backgroundColor: '#008080',
-          width: '10rem',
-          margin: 'auto',
-          marginTop: '2rem',
-        }}
+        style={{ marginTop: '2rem', background: '#008080' }}
       >
         Submit
       </Button>
@@ -86,12 +81,34 @@ const FormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
-border: 2px solid red;
-padding: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   .submit-question-header {
     color: #008080;
     font-size: 25px;
     font-weight: 100;
+  }
+
+  .submit-button {
+    backgroundcolor: '#008080';
+    width: 10rem;
+    margin: auto;
+    margintop: 2rem;
+  }
+`;
+
+const InputFieldContainer = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 50%;
+`;
+const TextAreaContainer = styled.div`
+  textarea {
+    width: 90%;
   }
 `;
