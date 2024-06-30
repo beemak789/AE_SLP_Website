@@ -13,12 +13,12 @@ const LandingPage = () => {
     <>
       <Navbar />
        <AboutMe />
-      {/* <Services />
+      <Services />
 
-      <Resources/>
+      {/* <Resources/>
       <Testimonials/>
       <ContactMe />
-      <Footer />  */}
+      <Footer />   */}
     </>
   );
 };

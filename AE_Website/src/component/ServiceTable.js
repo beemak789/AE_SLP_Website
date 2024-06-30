@@ -85,7 +85,15 @@ const ServiceTable = () => {
 
                   <AccordionDetails>{row.description}</AccordionDetails>
                   {idx === 0 ? (
-                    <Button style={{margin: '0.5rem', background: "#023020", color: "white"}}>Request an Evaluation</Button>
+                    <Button
+                      style={{
+                        margin: '0.5rem',
+                        background: '#023020',
+                        color: 'white',
+                      }}
+                    >
+                      Request an Evaluation
+                    </Button>
                   ) : null}
                 </Accordion>
               );
