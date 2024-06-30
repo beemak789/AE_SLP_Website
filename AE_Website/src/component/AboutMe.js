@@ -187,7 +187,7 @@ const OurPhilosophyContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
   }
 `;
 
@@ -217,5 +217,11 @@ const PhilosophyText = styled.div`
     font-size: 20px;
     text-align: start;
     color: #8e3e63;
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+    margin: auto;
   }
 `;
