@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Input } from '@mui/material';
 import { Button } from '@mui/material';
 import styled from 'styled-components';
-import CircularProgress from '@mui/material/CircularProgress';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -10,18 +9,35 @@ const Form = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const [statusMessage, setStatusMessage] = useState('');
-  const [loading, setLoading] = useState(false);
 
-  function submitForm() {
-    const formData = { name, email, phoneNumber, message };
-    const url = 'https://formsubmit.co/speechwithbrandy@gmail.com';
-    fetch(url, {
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setPhoneNumber('');
+  };
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    fetch('https://formsubmit.co/ajax/speechwithbrandy@gmail.com', {
       method: 'POST',
-      body: formData,
-    });
-    return false;
-  }
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phoneNumber,
+        message,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .then(() => setSubmitted(true))
+      .then(() => resetForm())
+      .catch((error) => console.log(error));
+  };
 
   return (
     <FormContainer onSubmit={submitForm}>
@@ -29,6 +45,7 @@ const Form = () => {
 
       <InputFieldContainer>
         <Input
+          type='text'
           className='input'
           placeholder='Name'
           value={name}
@@ -37,6 +54,7 @@ const Form = () => {
           required
         />
         <Input
+          type='email'
           className='input'
           placeholder='Email'
           value={email}
@@ -46,6 +64,7 @@ const Form = () => {
         />
         <Input
           className='input'
+          type='tel'
           placeholder='Phone Number'
           value={phoneNumber}
           name='_autoresponse'
@@ -58,7 +77,7 @@ const Form = () => {
         <h3
           style={{ padding: '1rem', textAlign: 'center', fontWeight: '100pt' }}
         >
-          {statusMessage}
+          {'Thank you. Your message has been sent.'}
         </h3>
       )}
       <TextAreaContainer>
@@ -67,6 +86,7 @@ const Form = () => {
           name='message'
           rows='8'
           cols='65'
+          value={message}
           required
           onInput={(event) => setMessage(event.target.value)}
         ></textarea>
@@ -77,11 +97,6 @@ const Form = () => {
         variant='contained'
         type='submit'
         style={{ marginTop: '2rem', background: '#008080' }}
-        onClick={() => {
-          setSubmitted(true);
-          setLoading(true);
-          setStatusMessage('Thank you. Your message has been sent.');
-        }}
         disabled={!name || !email || !phoneNumber || !message}
       >
         Submit
