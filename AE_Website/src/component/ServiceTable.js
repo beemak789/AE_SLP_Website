@@ -12,7 +12,7 @@ import { Link } from 'react-scroll';
 const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
-    fontSize: '15',
+    fontSize: 15,
   },
 });
 
@@ -71,7 +71,7 @@ const ServiceTable = () => {
 
             {rows1.map((row, idx) => {
               return (
-                <Accordion disableGutters>
+                <Accordion disableGutters key={idx}>
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     {row.services}
                   </AccordionSummary>
@@ -108,7 +108,7 @@ const ServiceTable = () => {
 
             {rows2.map((row, idx) => {
               return (
-                <Accordion disableGutters>
+                <Accordion disableGutters key={idx}>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls='panel1-content'

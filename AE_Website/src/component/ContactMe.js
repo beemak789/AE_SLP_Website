@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Form from './Form';
 import styled from 'styled-components';
 import { createTheme, ThemeProvider } from '@mui/material';
@@ -8,12 +8,11 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
     fontWeightRegular: 100,
-    fontSize: '16',
+    fontSize: 16,
   },
 });
 
 const ContactMe = () => {
-
   return (
     <ThemeProvider theme={theme}>
       <ContactMeContainer name='contactUs'>
@@ -32,15 +31,15 @@ const ContactMe = () => {
             </p>
 
             <div className='info'>
-              <img src='/phone.png' height={28} width={28} />
+              <img src='/phone.png' height={28} width={28} alt='' />
               <p>(937)-369-6613</p>
             </div>
             <div className='info'>
-              <img src='/mail.png' height={28} width={28} />
+              <img src='/mail.png' height={28} width={28} alt='' />
               <p>amye@fullbloomspeechlanguagepathology.com</p>
             </div>
             <div className='address-container'>
-              <img src='/map.png' height={28} width={28} />
+              <img src='/map.png' height={28} width={28} alt='' />
               <div className='address'>
                 <p>Kenton Place</p>
                 <p>17111 Kenton Drive Suite 206B</p>

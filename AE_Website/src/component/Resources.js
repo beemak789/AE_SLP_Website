@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -7,7 +7,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@mui/material/Divider';
 
 const Resources = () => {
-  const [expanded, setIsExpanded] = useState(false);
 
   return (
     <ResourcesContainer name='resources'>
@@ -128,6 +127,7 @@ const Resources = () => {
               <a
                 href='https://www.asha.org/public/developmental-milestones/communication-milestones/'
                 target='_blank'
+                rel="noreferrer"
               >
                 here
               </a>

@@ -31,8 +31,8 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, idx) => {
           return (
-            <SingleTestimonialCard>
-              <img src='/quotation.png' height={10} width={10} />
+            <SingleTestimonialCard key={idx}>
+              <img src='/quotation.png' height={10} width={10} alt=""/>
               <div key={idx} className='single-testimonial'>
                 {testimonial}{' '}
               </div>

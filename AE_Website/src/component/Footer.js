@@ -101,15 +101,15 @@ const Footer = () => {
         <ContactInfoContainer>
           <h3>Contact Us</h3>
           <div className='info'>
-            <img src='/phone.png' height={12} width={12} />
+            <img src='/phone.png' height={12} width={12} alt=""/>
             <p>(937)-369-6613</p>
           </div>
           <div className='info'>
-            <img src='/mail.png' height={12} width={12} />
+            <img src='/mail.png' height={12} width={12} alt=""/>
             <p>amye@fullbloomspeechlanguagepathology.com</p>
           </div>
           <div className='address-container'>
-            <img src='/map.png' height={12} width={12} />
+            <img src='/map.png' height={12} width={12} alt=""/>
             <div className='address'>
               <p>Kenton Place</p>
               <p>17111 Kenton Drive Suite 206B</p>
