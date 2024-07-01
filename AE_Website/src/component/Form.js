@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Input } from '@mui/material';
 import { Button } from '@mui/material';
 import styled from 'styled-components';
-import Loader from '../shared/Loader';
 import CircularProgress from '@mui/material/CircularProgress';
 
 const Form = () => {
