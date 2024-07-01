@@ -84,12 +84,21 @@ const ContactMeContainer = styled.div`
       1/0 var(--w) / calc(var(--w) + var(--g));
     margin-inline: auto;
   }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+   width: 100%;
+  }
+
 `;
 
 const ContactTextboxContainer = styled.div`
   display: flex;
-  width: 100%;
   gap: 2rem;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+   display: flex;
+   flex-direction: column;
+  }
 `;
 
 const GetInTouch = styled.div`
@@ -121,6 +130,11 @@ const GetInTouch = styled.div`
     .address {
       line-height: 3pt;
     }
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: fit-content;
+   font-size: 12px;
   }
 
 `;

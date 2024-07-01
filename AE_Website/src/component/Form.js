@@ -97,6 +97,10 @@ const FormContainer = styled.form`
     margin: auto;
     margintop: 2rem;
   }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: fit-content;
+  }
 `;
 
 const InputFieldContainer = styled.div`

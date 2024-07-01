@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
   return (
-    <FooterContainer className='footer footer-container footer-dark'>
+    <FooterContainer>
       <FooterContent>
         <div className='logo-socials'>
           <LogoImage
@@ -73,11 +73,11 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   background: white;
-
-  ${'' /* p{
-    background: #008080;
-    color: white;
-  } */}
+  bottom: 0px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  bottom: 0px;
 `;
 
 const FooterContent = styled.div`
@@ -87,7 +87,6 @@ const FooterContent = styled.div`
   justify-content: space-between;
   margin: auto;
 
-
   .logo-socials {
     display: flex;
     flex-direction: row;
@@ -95,11 +94,21 @@ const FooterContent = styled.div`
     gap: 0.5rem;
     padding-bottom: 0rem;
   }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const LogoImage = styled.img`
   margin-left: 2rem;
   bottom: 0;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const FacebookIcon = styled.svg`
@@ -113,7 +122,11 @@ const QuickLinksContainer = styled.div`
   flex-direction: column;
   line-height: 1pt;
   padding-top: 2rem;
-  color: #8e3e63
+  color: #8e3e63;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+   display: none;
+  }
 `;
 
 const ContactInfoContainer = styled.div`
@@ -121,6 +134,11 @@ const ContactInfoContainer = styled.div`
   flex-direction: column;
   text-align: start;
   padding: 1rem;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 
   .info,
   .address-container {

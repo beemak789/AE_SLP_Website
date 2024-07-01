@@ -16,8 +16,8 @@ const Testimonials = () => {
       </div>
 
       <Carousel
-        autoPlay={false}
-        navButtonsAlwaysInvisible={false}
+        autoPlay={true}
+        navButtonsAlwaysInvisible={true}
         navButtonsProps={{
           style: {
             backgroundColor: '#023020',
@@ -87,7 +87,7 @@ const TestimonialsContainer = styled.div`
 `;
 
 const SingleTestimonialCard = styled.div`
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 2px;
   background: white;
   color: black;
