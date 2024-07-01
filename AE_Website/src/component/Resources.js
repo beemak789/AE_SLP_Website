@@ -122,7 +122,11 @@ const Resources = () => {
               (ASHA). You may find the developmental milestone resources
               particularly helpful when trying to determine if your child would
               benefit from a speech language evaluation. Those milestones can be
-              found at this link here.
+              found at this link{' '}
+              <a href='https://www.asha.org/public/developmental-milestones/communication-milestones/' target="_blank">
+                here
+              </a>
+              .
             </AccordionDetails>
           </Accordion>
         </ResourceBox>
