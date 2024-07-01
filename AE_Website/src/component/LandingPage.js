@@ -12,11 +12,11 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-       <AboutMe />
+      <AboutMe />
       <Services />
 
-      <Resources/>
-      <Testimonials/>
+      <Resources />
+      <Testimonials />
       <ContactMe />
       <Footer />
     </>
@@ -24,4 +24,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-

@@ -1,20 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box } from '@mui/material';
+import Divider from '@mui/material/Divider';
 
-const bull = (
-  <Box
-    component='span'
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
 
 const AboutMe = () => {
   return (
     <AboutMeContainer name='aboutUs'>
-      <h2 className='about-header'>About</h2>
+
+
+    <Divider style={{color: '#008080', fontWeight: '100'}}>About</Divider>
 
       <AboutMeSection>
         <ProfileImg src='/amyElderProfile.jpg' alt='profile-pic'></ProfileImg>
@@ -92,13 +86,6 @@ const AboutMeContainer = styled.div`
   font-weight: bold;
   background-color: white;
   width: 100%;
-
-  .about-header {
-    font-size: 35px;
-    font-weight: 300;
-    text-align: center;
-    color: #023020;
-  }
 `;
 
 const AboutMeSection = styled.div`

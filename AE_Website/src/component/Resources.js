@@ -1,25 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { resourceTitles, resources } from '../utils/clientinfo';
-import { Box } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-const bull = (
-  <Box
-    component='span'
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+import Divider from '@mui/material/Divider';
 
 const Resources = () => {
   return (
     <ResourcesContainer name='resources'>
-      <h2 className='resources-header'>Resources</h2>
+      <Divider
+        style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
+      >
+        Resources
+      </Divider>
 
       <ResourcesList>
         <ResourceBox>

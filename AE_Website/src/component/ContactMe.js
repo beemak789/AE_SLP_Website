@@ -2,6 +2,7 @@ import React from 'react';
 import Form from './Form';
 import styled from 'styled-components';
 import { createTheme, ThemeProvider } from '@mui/material';
+import Divider from '@mui/material/Divider';
 
 const theme = createTheme({
   typography: {
@@ -15,7 +16,11 @@ const ContactMe = () => {
   return (
     <ThemeProvider theme={theme}>
       <ContactMeContainer name='contactUs'>
-        <h2 className='fancy'>Contact Us</h2>
+        <Divider
+          style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
+        >
+          Testimonials
+        </Divider>
 
         <ContactTextboxContainer>
           <GetInTouch>
@@ -55,16 +60,7 @@ export default ContactMe;
 const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-right: 2rem;
-  padding-left: 2rem;
   padding-bottom: 3rem;
-
-  .fancy {
-    font-size: 35px;
-    font-weight: 300;
-    text-align: center;
-    color: #023020;
-  }
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 100%;
@@ -74,6 +70,7 @@ const ContactMeContainer = styled.div`
 const ContactTextboxContainer = styled.div`
   display: flex;
   gap: 2rem;
+  padding: 2rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;

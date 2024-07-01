@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { testimonials } from '../utils/clientinfo';
-import { Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
-import Slide from '@mui/material/Slide';
-import Paper from '@mui/material/Paper';
+import Divider from '@mui/material/Divider';
 
 const Testimonials = () => {
   return (
     <TestimonialsContainer name='testimonials'>
-      <h2 className='fancy'>Testimonials</h2>
+      <Divider
+        style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
+      >
+        Testimonials
+      </Divider>
+
       <div className='hear-from'>
         <p>Our happy clients</p>
         <p className='about-tag'>on their experience with us</p>

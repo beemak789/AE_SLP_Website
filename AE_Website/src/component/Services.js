@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-scroll';
+import Divider from '@mui/material/Divider';
 import styled from 'styled-components';
 import ServiceTable from './ServiceTable';
 
@@ -7,7 +7,9 @@ const Services = () => {
   return (
     <ServicesContainer name='services'>
       <ServiceSection>
-        <h2 className='fancy'>Our Services</h2>
+        <Divider style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}>
+          Our Services
+        </Divider>
         <h4 className='explore'>
           Learn more about the services we provide at Full Bloom
         </h4>
