@@ -14,6 +14,15 @@ import { links } from '../utils/links';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
+const styleObj = {
+  '&:hover': {
+    backgroundColor: 'white',
+  },
+  '&:active': {
+    backgroundColor: 'white',
+  },
+};
+
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -27,7 +36,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position='static' className='nav-bar-container' name="nav">
+      <AppBar position='static' className='nav-bar-container' name='nav'>
         <NavBarContainer>
           <ContactInfoContainer>
             <div>
@@ -64,7 +73,11 @@ const Navbar = () => {
                 mx: 'auto',
               }}
             >
-              <Button onClick={handleCloseNavMenu}>
+              <Button
+                onClick={handleCloseNavMenu}
+                disableRipple={true}
+                style={{ backgroundColor: 'transparent' }}
+              >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
                   <LogoImg src='/logo.jpg'></LogoImg>
                 </Link>
@@ -151,7 +164,7 @@ const ContactInfoContainer = styled.div`
   background: #008080;
   height: 25px;
   display: flex;
-  align-items: space-between;
+  padding: 0.8rem;
 
   span {
     color: white;
@@ -165,7 +178,7 @@ const ContactInfoContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-left: 35rem;
+    margin-left: -2rem;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {

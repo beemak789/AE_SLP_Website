@@ -6,20 +6,13 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { makeStyles } from '@mui/styles';
 import Button from '@mui/material/Button';
+import { Link } from 'react-scroll';
 
 const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
-    fontWeightRegular: 100,
     fontSize: '15',
-  },
-});
-
-const useStyles = makeStyles({
-  content: {
-    justifyContent: 'center',
   },
 });
 
@@ -88,11 +81,18 @@ const ServiceTable = () => {
                     <Button
                       style={{
                         margin: '0.5rem',
-                        background: '#023020',
+                        background: '#008080',
                         color: 'white',
                       }}
                     >
-                      Request an Evaluation
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to='contactUs'
+                      >
+                        Request an Evaluation
+                      </Link>
                     </Button>
                   ) : null}
                 </Accordion>

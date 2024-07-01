@@ -15,7 +15,11 @@ const Footer = () => {
     <FooterContainer>
       <FooterContent>
         <div className='logo-socials'>
-          <Button onClick={handleCloseNavMenu}>
+          <Button
+            onClick={handleCloseNavMenu}
+            disableRipple={true}
+            style={{ backgroundColor: 'transparent' }}
+          >
             <Link spy={true} smooth={true} duration={500} to='nav'>
               <LogoImage
                 className='nav-leaf-icon'
@@ -158,7 +162,7 @@ const ContactInfoContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     line-height: 2pt;
   }

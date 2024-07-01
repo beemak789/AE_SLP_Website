@@ -2,13 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Divider from '@mui/material/Divider';
 
-
 const AboutMe = () => {
   return (
     <AboutMeContainer name='aboutUs'>
-
-
-    <Divider style={{color: '#008080', fontWeight: '100'}}>About</Divider>
+      <Divider style={{ color: '#008080', fontWeight: '100' }}>About</Divider>
 
       <AboutMeSection>
         <ProfileImg src='/amyElderProfile.jpg' alt='profile-pic'></ProfileImg>
