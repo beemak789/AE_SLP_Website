@@ -8,7 +8,7 @@ const Form = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setIsSubmitted] = useState(false);
 
   const resetForm = () => {
     setName('');
@@ -17,26 +17,29 @@ const Form = () => {
     setPhoneNumber('');
   };
 
-  const submitForm = (e) => {
-    e.preventDefault();
-    fetch('https://formsubmit.co/ajax/speechwithbrandy@gmail.com', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phoneNumber,
-        message,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .then(() => setSubmitted(true))
-      .then(() => resetForm())
-      .catch((error) => console.log(error));
+  const submitForm = async (e) => {
+    try {
+      e.preventDefault();
+      await fetch('https://formsubmit.co/ajax/speechwithbrandy@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phoneNumber,
+          message,
+        }),
+      });
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.log(error);
+    }
+
+    resetForm();
   };
 
   return (
@@ -46,7 +49,7 @@ const Form = () => {
       <InputFieldContainer>
         <Input
           type='text'
-          className='input'
+
           placeholder='Name'
           value={name}
           name='_autoresponse'
@@ -55,7 +58,7 @@ const Form = () => {
         />
         <Input
           type='email'
-          className='input'
+
           placeholder='Email'
           value={email}
           name='_autoresponse'
@@ -63,7 +66,6 @@ const Form = () => {
           required
         />
         <Input
-          className='input'
           type='tel'
           placeholder='Phone Number'
           value={phoneNumber}
