@@ -11,17 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-scroll';
 import { links } from '../utils/links';
-import { createTheme } from '@mui/material';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
-
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Solway',
-    fontWeightRegular: 100,
-    fontSize: '10',
-  },
-});
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -36,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position='static' className='nav-bar-container'>
+      <AppBar position='static' className='nav-bar-container' name="nav">
         <NavBarContainer>
           <ContactInfoContainer>
             <div>
@@ -73,7 +64,11 @@ const Navbar = () => {
                 mx: 'auto',
               }}
             >
-              <LogoImg src='/logo.jpg'></LogoImg>
+              <Button onClick={handleCloseNavMenu}>
+                <Link spy={true} smooth={true} duration={500} to='nav'>
+                  <LogoImg src='/logo.jpg'></LogoImg>
+                </Link>
+              </Button>
 
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
@@ -143,6 +138,7 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
 const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -178,9 +174,9 @@ const ContactInfoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 300px;
-  height: 180px;
-  margin-left: 1rem;
+  width: 250px;
+  height: 185px;
+  margin-left: 1.5rem;
   @media (min-width: 375px) and (max-width: 768px) {
     height: 230px;
     width: 310px;

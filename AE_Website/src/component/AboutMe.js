@@ -85,7 +85,6 @@ const AboutMeContainer = styled.div`
   font-size: 32px;
   font-weight: bold;
   background-color: white;
-  width: 100%;
 `;
 
 const AboutMeSection = styled.div`

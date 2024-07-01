@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
+import { Button } from '@mui/material';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
     <FooterContainer>
       <FooterContent>
         <div className='logo-socials'>
-          <LogoImage
-            className='nav-leaf-icon'
-            src='/logo.jpg'
-            alt='leafIcon logo'
-            width={240}
-            height={190}
-          ></LogoImage>
+          <Button onClick={handleCloseNavMenu}>
+            <Link spy={true} smooth={true} duration={500} to='nav'>
+              <LogoImage
+                className='nav-leaf-icon'
+                src='/logo.jpg'
+                alt='leafIcon logo'
+                width={240}
+                height={190}
+              ></LogoImage>
+            </Link>
+          </Button>
+
           <a href='https://instagram.com/speakeasywithbrandy?igshid=MzNlNGNkZWQ4Mg=='>
             {' '}
             <Icon icon='skill-icons:instagram' />

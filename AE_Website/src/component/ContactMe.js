@@ -19,7 +19,7 @@ const ContactMe = () => {
         <Divider
           style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
         >
-          Testimonials
+          Contact Us
         </Divider>
 
         <ContactTextboxContainer>

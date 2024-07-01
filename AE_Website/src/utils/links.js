@@ -1,5 +1,8 @@
 export const links = [
   {
+    to: 'nav',
+  },
+  {
     to: 'aboutUs',
     name: 'About Us',
   },
