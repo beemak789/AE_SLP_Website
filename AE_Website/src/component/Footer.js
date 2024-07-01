@@ -55,10 +55,47 @@ const Footer = () => {
         </div>
 
         <QuickLinksContainer>
-          <h3>Quick Links</h3> <p>About Us</p>
-          <p>Services</p>
-          <p>Resources</p>
-          <p>Contact</p>
+          <h3>Quick Links</h3>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='aboutUs'
+          >
+            <p>About Us</p>
+          </Link>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='services'
+          >
+            <p>Services</p>
+          </Link>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='resources'
+          >
+            <p>Resources</p>
+          </Link>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='contactUs'
+          >
+            <p>Contact</p>
+          </Link>
         </QuickLinksContainer>
 
         <ContactInfoContainer>
@@ -143,6 +180,11 @@ const QuickLinksContainer = styled.div`
   line-height: 1pt;
   padding-top: 2rem;
   color: #8e3e63;
+
+  .link:hover {
+    cursor: pointer;
+    color: #008080;
+  }
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;

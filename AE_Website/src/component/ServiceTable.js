@@ -83,6 +83,9 @@ const ServiceTable = () => {
                         margin: '0.5rem',
                         background: '#008080',
                         color: 'white',
+                        ':hover': {
+                          background: '#008080',
+                        },
                       }}
                     >
                       <Link

@@ -82,6 +82,7 @@ const Form = () => {
           setLoading(true);
           setStatusMessage('Sending your message, please be patient.');
         }}
+        disabled={!name || !email || !phoneNumber || !message}
       >
         Submit
       </Button>
@@ -102,6 +103,7 @@ const FormContainer = styled.form`
   .status-messsage {
     color: #008080;
     font-weight: 100pt;
+    border: 2px solid green;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
