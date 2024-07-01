@@ -153,7 +153,6 @@ const NavBarContainer = styled.div`
 
 const ContactInfoContainer = styled.div`
   background: #008080;
-  width: 100%;
   height: 25px;
   display: flex;
   align-items: space-between;
@@ -183,7 +182,8 @@ const LogoImg = styled.img`
   height: 180px;
   margin-left: 1rem;
   @media (min-width: 375px) and (max-width: 768px) {
-    height: 200px;
+    height: 230px;
+    width: 310px;
   }
 `;
 const NavLinksContainer = styled(Box)`

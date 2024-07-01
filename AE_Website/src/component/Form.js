@@ -14,7 +14,7 @@ const Form = () => {
       action='https://formsubmit.co/speechwithbrandy@gmail.com'
       method='POST'
     >
-      <h3 className='submit-question-header'>Request an Evaluation</h3>
+      <h3>Request an Evaluation</h3>
       <input
         type='hidden'
         name='_blacklist'
@@ -80,27 +80,15 @@ const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-  .submit-question-header {
-    color: #008080;
-    font-size: 25px;
-    font-weight: 100;
-  }
 
-  .submit-button {
-    backgroundcolor: '#008080';
-    width: 10rem;
-    margin: auto;
-    margintop: 2rem;
-  }
 
   @media (min-width: 375px) and (max-width: 768px) {
     margin: auto;
-    width: 100%;
+    padding: 0rem;
     padding-bottom: 1rem;
   }
 `;
@@ -110,11 +98,17 @@ const InputFieldContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
   width: 50%;
 `;
 const TextAreaContainer = styled.div`
   textarea {
     width: 90%;
+    align: center;
+  }
+
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 50%;
+    align: center;
   }
 `;
