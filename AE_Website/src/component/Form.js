@@ -54,7 +54,7 @@ const Form = () => {
         />
       </InputFieldContainer>
 
-      {submitted &&  (
+      {submitted && (
         <h3
           style={{ padding: '1rem', textAlign: 'center', fontWeight: '100pt' }}
         >
@@ -79,6 +79,7 @@ const Form = () => {
         style={{ marginTop: '2rem', background: '#008080' }}
         onClick={() => {
           setSubmitted(true);
+          setLoading(true);
           setStatusMessage('Thank you. Your message has been sent.');
         }}
         disabled={!name || !email || !phoneNumber || !message}
