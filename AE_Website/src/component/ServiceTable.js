@@ -130,7 +130,6 @@ const ServiceTable = () => {
 export default ServiceTable;
 
 const TableParent = styled.div`
-  height: fit-content;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;

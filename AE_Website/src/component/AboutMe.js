@@ -98,10 +98,12 @@ const AboutMeSection = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
   border-radius: 5px;
   margin-top: -0.5rem;
+  padding: 1.5rem;
+
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
@@ -114,7 +116,7 @@ const AboutMeParagraphContainer = styled.div`
   flex-direction: column;
 
   .clinician-header-container {
-    font-size: 24px;
+    font-size: 28px;
     text-align: start;
     color: #8e3e63;
 
@@ -129,10 +131,9 @@ const AboutMeParagraphContainer = styled.div`
     }
   }
   .paragraph {
-    font-size: 12px;
     padding: 1.2rem;
-    font-size: 13.5px;
-    line-height: 15pt;
+    font-size: 18px;
+    line-height: 16pt;
     font-weight: 100;
     text-align: start;
     margin-top: -2rem;
@@ -153,10 +154,11 @@ const OurPhilosophyContainer = styled.div`
 `;
 
 const FamilyImg = styled.img`
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   border: 2px;
   border-radius: 5px;
+  padding: 1.5rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
@@ -165,17 +167,16 @@ const FamilyImg = styled.img`
 `;
 
 const PhilosophyText = styled.div`
-  font-size: 12px;
+  font-size: 18px;
   padding: 1.2rem;
-  font-size: 13.5px;
-  line-height: 15pt;
+  line-height: 16pt;
   font-weight: 100;
   text-align: start;
   margin-left: 1.2rem;
   margin-top: -2rem;
 
   .header-2 {
-    font-size: 20px;
+    font-size: 28px;
     text-align: start;
     color: #8e3e63;
   }

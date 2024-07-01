@@ -168,7 +168,7 @@ const ContactInfoContainer = styled.div`
   span {
     color: white;
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 2rem;
     font-weight: 100;
   }
@@ -186,8 +186,8 @@ const ContactInfoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 250px;
-  height: 185px;
+  width: 280px;
+  height: 200px;
   margin-left: 1.5rem;
   @media (min-width: 375px) and (max-width: 768px) {
     height: 230px;
@@ -197,10 +197,9 @@ const LogoImg = styled.img`
 const NavLinksContainer = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: center;
-  font-size: 20px;
+  font-size: 24px !important;
   color: black !important;
-  gap: 1.5rem;
+  justify-content: space-between;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;

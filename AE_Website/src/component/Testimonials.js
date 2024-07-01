@@ -68,13 +68,13 @@ const TestimonialsContainer = styled.div`
 `;
 
 const SingleTestimonialCard = styled.div`
-  padding: 2rem;
   border-radius: 2px;
   background: white;
   color: black;
   display: flex;
-  gap: 7px;
   margin: auto;
+  line-height: 15pt;
+  padding: 3rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     margin: auto;

@@ -100,21 +100,23 @@ const Footer = () => {
 
         <ContactInfoContainer>
           <h3>Contact Us</h3>
-          <div className='info'>
-            <img src='/phone.png' height={12} width={12} alt=""/>
-            <p>(937)-369-6613</p>
-          </div>
-          <div className='info'>
-            <img src='/mail.png' height={12} width={12} alt=""/>
-            <p>amye@fullbloomspeechlanguagepathology.com</p>
-          </div>
+
           <div className='address-container'>
-            <img src='/map.png' height={12} width={12} alt=""/>
+            <img src='/map.png' height={12} width={12} alt='' />
             <div className='address'>
               <p>Kenton Place</p>
               <p>17111 Kenton Drive Suite 206B</p>
               <p>Cornelius, NC 28031</p>
             </div>
+          </div>
+
+          <div className='info'>
+            <img src='/phone.png' height={12} width={12} alt='' />
+            <p>(937)-369-6613</p>
+          </div>
+          <div className='info'>
+            <img src='/mail.png' height={12} width={12} alt='' />
+            <p>amye@fullbloomspeechlanguagepathology.com</p>
           </div>
         </ContactInfoContainer>
       </FooterContent>
@@ -151,15 +153,14 @@ const FooterContent = styled.div`
     gap: 0.5rem;
     padding-bottom: 0rem;
 
-
-      @media (min-width: 375px) and (max-width: 768px) {
-       display: flex;
-       flex-direction: row;
-       margin-left: -4rem;
-       gap: 1rem;
-       align-items: center;
-      }
-
+    @media (min-width: 375px) and (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 2rem;
+      bottom: 0;
+      margin-left: -10rem;
+    }
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -209,7 +210,7 @@ const ContactInfoContainer = styled.div`
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
-    align-items: center;
+    align-items: start;
   }
 
   .info,
@@ -217,7 +218,7 @@ const ContactInfoContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     line-height: 2pt;
   }
