@@ -60,7 +60,11 @@ const Form = () => {
         <CircularProgress style={{ marginTop: '2rem' }}></CircularProgress>
       )}
 
-      {loading && <h3 className='status-message'>{statusMessage}</h3>}
+      {loading && (
+        <h3 style={{ padding: '1rem', textAlign: 'center', fontWeight: '100pt' }}>
+          {statusMessage}
+        </h3>
+      )}
       <TextAreaContainer>
         <textarea
           id='message'
