@@ -159,7 +159,7 @@ const FooterContent = styled.div`
       align-items: center;
       gap: 2rem;
       bottom: 0;
-      margin-left: -10rem;
+      margin-left: -12rem;
     }
   }
 

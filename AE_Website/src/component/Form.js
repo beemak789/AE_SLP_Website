@@ -9,31 +9,30 @@ const Form = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState('');
+  const [submitted, setSubmitted] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  function submitForm() {
+    const formData = { name, email, phoneNumber, message };
+    const url = 'https://formsubmit.co/speechwithbrandy@gmail.com';
+    fetch(url, {
+      method: 'POST',
+      body: formData,
+    });
+    return false;
+  }
 
   return (
-    <FormContainer
-      action='https://formsubmit.co/speechwithbrandy@gmail.com'
-      method='POST'
-    >
+    <FormContainer onSubmit={submitForm}>
       <h3>Request an Evaluation</h3>
-      <input
-        type='hidden'
-        name='_blacklist'
-        value='spammy pattern, banned term, phrase'
-      ></input>
-      <input
-        type='hidden'
-        name='_autoresponse'
-        value='your custom message'
-      ></input>
+
       <InputFieldContainer>
         <Input
           className='input'
           placeholder='Name'
           value={name}
-          name='name'
+          name='_autoresponse'
           onInput={(event) => setName(event.target.value)}
           required
         />
@@ -41,7 +40,7 @@ const Form = () => {
           className='input'
           placeholder='Email'
           value={email}
-          name='email'
+          name='_autoresponse'
           onInput={(event) => setEmail(event.target.value)}
           required
         />
@@ -49,18 +48,16 @@ const Form = () => {
           className='input'
           placeholder='Phone Number'
           value={phoneNumber}
-          name='phoneNumber'
+          name='_autoresponse'
           onInput={(event) => setPhoneNumber(event.target.value)}
           required
         />
       </InputFieldContainer>
 
-      {loading && (
-        <CircularProgress style={{ marginTop: '2rem' }}></CircularProgress>
-      )}
-
-      {loading && (
-        <h3 style={{ padding: '1rem', textAlign: 'center', fontWeight: '100pt' }}>
+      {submitted &&  (
+        <h3
+          style={{ padding: '1rem', textAlign: 'center', fontWeight: '100pt' }}
+        >
           {statusMessage}
         </h3>
       )}
@@ -81,8 +78,8 @@ const Form = () => {
         type='submit'
         style={{ marginTop: '2rem', background: '#008080' }}
         onClick={() => {
-          setLoading(true);
-          setStatusMessage('Sending your message, please be patient.');
+          setSubmitted(true);
+          setStatusMessage('Thank you. Your message has been sent.');
         }}
         disabled={!name || !email || !phoneNumber || !message}
       >
