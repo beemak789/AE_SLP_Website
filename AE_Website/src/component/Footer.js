@@ -25,8 +25,8 @@ const Footer = () => {
                 className='nav-leaf-icon'
                 src='/logo.jpg'
                 alt='leafIcon logo'
-                width={240}
-                height={190}
+                width={250}
+                height={200}
               ></LogoImage>
             </Link>
           </Button>
