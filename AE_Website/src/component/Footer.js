@@ -125,7 +125,7 @@ const QuickLinksContainer = styled.div`
   color: #8e3e63;
 
   @media (min-width: 375px) and (max-width: 768px) {
-   display: none;
+    display: none;
   }
 `;
 

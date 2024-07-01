@@ -125,7 +125,6 @@ const Navbar = () => {
                 {links.map((link, idx) => (
                   <Button key={idx} onClick={handleCloseNavMenu}>
                     <StyledLink
-                      className='links-text'
                       spy={true}
                       smooth={true}
                       duration={500}

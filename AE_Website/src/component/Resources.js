@@ -18,7 +18,7 @@ const bull = (
 
 const Resources = () => {
   return (
-    <ResourcesContainer name="resources">
+    <ResourcesContainer name='resources'>
       <h2 className='resources-header'>Resources</h2>
 
       <ResourcesList>
@@ -128,8 +128,7 @@ const Resources = () => {
               (ASHA). You may find the developmental milestone resources
               particularly helpful when trying to determine if your child would
               benefit from a speech language evaluation. Those milestones can be
-              found at this link:
-              https://www.asha.org/public/developmental-milestones/communication-milestones/.
+              found at this link here.
             </AccordionDetails>
           </Accordion>
         </ResourceBox>
@@ -145,28 +144,7 @@ const ResourcesContainer = styled.div`
     font-size: 35px;
     font-weight: 300;
     text-align: center;
-
-    --b: 0.5px; /* control the border thickness */
-    --w: 400px; /* control the width of the line*/
-    --g: -1px; /* control the gap */
-    --c: #023020;
-
-    width: fit-content;
-    padding: 0 1em;
-    line-height: 1.6em;
-    border: 1px solid;
     color: #023020;
-    margin-top: 1rem;
-    background-size: 51% 100%;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    border-image: linear-gradient(
-        #0000 calc(50% - var(--b) / 2),
-        var(--c) 0 calc(50% + var(--b) / 2),
-        #0000 0
-      )
-      1/0 var(--w) / calc(var(--w) + var(--g));
-    margin-inline: auto;
   }
 `;
 

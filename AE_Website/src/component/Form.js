@@ -99,7 +99,9 @@ const FormContainer = styled.form`
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
-    width: fit-content;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 1rem;
   }
 `;
 
