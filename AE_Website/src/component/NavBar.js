@@ -14,15 +14,6 @@ import { links } from '../utils/links';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
-const styleObj = {
-  '&:hover': {
-    backgroundColor: 'white',
-  },
-  '&:active': {
-    backgroundColor: 'white',
-  },
-};
-
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -36,7 +27,12 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position='static' className='nav-bar-container' name='nav'>
+      <AppBar
+        position='static'
+        className='nav-bar-container'
+        name='nav'
+        color='transparent'
+      >
         <NavBarContainer>
           <ContactInfoContainer>
             <div>
@@ -111,24 +107,24 @@ const Navbar = () => {
                   }}
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
-                  sx={{
-                    display: { xs: 'block', md: 'none' },
-                  }}
                 >
-                  {links.map((link, idx) => (
-                    <MenuItem key={idx} onClick={handleCloseNavMenu}>
-                      <Typography>
-                        <Link
-                          spy={true}
-                          smooth={true}
-                          duration={500}
-                          to={link.to}
-                        >
-                          {link.name}
-                        </Link>
-                      </Typography>
-                    </MenuItem>
-                  ))}
+                  {links.map(
+                    (link, idx) =>
+                      idx > 0 && (
+                        <MenuItem key={idx} onClick={handleCloseNavMenu}>
+                          <Typography>
+                            <Link
+                              spy={true}
+                              smooth={true}
+                              duration={500}
+                              to={link.to}
+                            >
+                              {link.name}
+                            </Link>
+                          </Typography>
+                        </MenuItem>
+                      )
+                  )}
                 </Menu>
               </Box>
 

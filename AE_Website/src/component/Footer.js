@@ -150,6 +150,16 @@ const FooterContent = styled.div`
     align-items: center;
     gap: 0.5rem;
     padding-bottom: 0rem;
+
+
+      @media (min-width: 375px) and (max-width: 768px) {
+       display: flex;
+       flex-direction: row;
+       margin-left: -4rem;
+       gap: 1rem;
+       align-items: center;
+      }
+
   }
 
   @media (min-width: 375px) and (max-width: 768px) {

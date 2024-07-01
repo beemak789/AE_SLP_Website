@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -7,6 +7,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@mui/material/Divider';
 
 const Resources = () => {
+  const [expanded, setIsExpanded] = useState(false);
+
   return (
     <ResourcesContainer name='resources'>
       <Divider
@@ -22,7 +24,7 @@ const Resources = () => {
             Pathologist help?{' '}
           </h3>
           <Accordion disableGutters>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon  />}>
               Learn More
             </AccordionSummary>
             <AccordionDetails>
@@ -123,7 +125,10 @@ const Resources = () => {
               particularly helpful when trying to determine if your child would
               benefit from a speech language evaluation. Those milestones can be
               found at this link{' '}
-              <a href='https://www.asha.org/public/developmental-milestones/communication-milestones/' target="_blank">
+              <a
+                href='https://www.asha.org/public/developmental-milestones/communication-milestones/'
+                target='_blank'
+              >
                 here
               </a>
               .
