@@ -72,7 +72,6 @@ const Form = () => {
           cols='65'
           required
           onInput={(event) => setMessage(event.target.value)}
-          className='text-area-container'
         ></textarea>
       </TextAreaContainer>
 
@@ -125,8 +124,10 @@ const InputFieldContainer = styled.div`
 `;
 const TextAreaContainer = styled.div`
   textarea {
-    width: 90%;
+    width: 100%;
     align: center;
+    margin: auto;
+    margin-top: 2rem;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
