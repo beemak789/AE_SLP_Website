@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Input } from '@mui/material';
 import { Button } from '@mui/material';
 import styled from 'styled-components';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -9,6 +10,7 @@ const Form = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const resetForm = () => {
     setName('');
@@ -18,6 +20,7 @@ const Form = () => {
   };
 
   const submitForm = async (e) => {
+    setIsLoading(true);
     try {
       e.preventDefault();
       await fetch('https://formsubmit.co/ajax/speechwithbrandy@gmail.com', {
@@ -35,6 +38,7 @@ const Form = () => {
       });
 
       setIsSubmitted(true);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -49,7 +53,6 @@ const Form = () => {
       <InputFieldContainer>
         <Input
           type='text'
-
           placeholder='Name'
           value={name}
           name='_autoresponse'
@@ -58,7 +61,6 @@ const Form = () => {
         />
         <Input
           type='email'
-
           placeholder='Email'
           value={email}
           name='_autoresponse'
@@ -74,6 +76,8 @@ const Form = () => {
           required
         />
       </InputFieldContainer>
+
+      {isLoading && <CircularProgress style={{ marginTop: '1rem' }} />}
 
       {submitted && (
         <h3
