@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,7 +13,6 @@ import { Link } from 'react-scroll';
 import { links } from '../utils/links';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
-import { animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
