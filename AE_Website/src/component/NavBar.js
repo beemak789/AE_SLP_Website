@@ -16,8 +16,6 @@ import { Icon } from '@iconify/react';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [open, setOpen] = useState(false);
-  const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 });
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

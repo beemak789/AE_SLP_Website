@@ -58,6 +58,7 @@ const Form = () => {
           name='_autoresponse'
           onInput={(event) => setName(event.target.value)}
           required
+          onChange={() => setIsSubmitted(false)}
         />
         <Input
           type='email'
@@ -66,6 +67,7 @@ const Form = () => {
           name='_autoresponse'
           onInput={(event) => setEmail(event.target.value)}
           required
+          onChange={() => setIsSubmitted(false)}
         />
         <Input
           type='tel'
@@ -74,6 +76,7 @@ const Form = () => {
           name='_autoresponse'
           onInput={(event) => setPhoneNumber(event.target.value)}
           required
+          onChange={() => setIsSubmitted(false)}
         />
       </InputFieldContainer>
 
@@ -95,6 +98,7 @@ const Form = () => {
           value={message}
           required
           onInput={(event) => setMessage(event.target.value)}
+          onChange={() => setIsSubmitted(false)}
         ></textarea>
       </TextAreaContainer>
 
@@ -147,10 +151,5 @@ const TextAreaContainer = styled.div`
     align: center;
     margin: auto;
     margin-top: 2rem;
-  }
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 50%;
-    align: center;
   }
 `;
