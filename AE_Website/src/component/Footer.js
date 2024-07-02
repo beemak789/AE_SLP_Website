@@ -175,7 +175,7 @@ const LogoImage = styled.img`
 `;
 
 const FacebookIcon = styled.svg`
-  height: 1.2em;
+  height: 1em;
   width: 1.2em;
   margin-top: -0.2rem;
 `;
