@@ -25,7 +25,7 @@ const Footer = () => {
                 className='nav-leaf-icon'
                 src='/logo.jpg'
                 alt='leafIcon logo'
-                width={250}
+                width={270}
                 height={200}
               ></LogoImage>
             </Link>
@@ -140,6 +140,7 @@ const FooterContainer = styled.footer`
   margin: 0;
   padding: 10px;
   bottom: 0px;
+  align-items: center;
 `;
 
 const FooterContent = styled.div`
@@ -166,7 +167,7 @@ const FooterContent = styled.div`
 
 const LogoImage = styled.img`
   margin-left: 2rem;
-  bottom: 0;
+  margin-top: 3rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;
@@ -183,8 +184,9 @@ const QuickLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   line-height: 1pt;
-  padding-top: 2rem;
   color: #8e3e63;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
 
   .link:hover {
     cursor: pointer;

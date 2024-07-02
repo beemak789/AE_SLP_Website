@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,9 +13,12 @@ import { Link } from 'react-scroll';
 import { links } from '../utils/links';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
+import { animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 });
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -24,6 +27,7 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
 
   return (
     <>
@@ -93,25 +97,26 @@ const Navbar = () => {
                 >
                   <MenuIcon />
                 </IconButton>
+
                 <Menu
                   id='menu-appbar'
                   anchorEl={anchorElNav}
                   anchorOrigin={{
-                    vertical: 'bottom',
+                    vertical: 'top',
                     horizontal: 'left',
                   }}
-                  keepMounted
                   transformOrigin={{
                     vertical: 'top',
                     horizontal: 'left',
                   }}
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
+                  disableScrollLock={false}
                 >
                   {links.map(
                     (link, idx) =>
                       idx > 0 && (
-                        <MenuItem key={idx} onClick={handleCloseNavMenu}>
+                        <MenuItem key={idx} onClick={handleCloseNavMenu} onBlur={handleCloseNavMenu}>
                           <Typography>
                             <Link
                               spy={true}
