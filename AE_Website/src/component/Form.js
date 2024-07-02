@@ -151,5 +151,11 @@ const TextAreaContainer = styled.div`
     align: center;
     margin: auto;
     margin-top: 2rem;
+
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      width: 90%;
+      display: flex;
+    }
   }
 `;
