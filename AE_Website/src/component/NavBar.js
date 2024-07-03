@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
 
             <div className='facebook-insta-container'>
-              <a href='https://www.instagram.com/fullbloomslp'>
+              <a href='https://www.instagram.com/fullbloomslp?igsh=cDNhNncydmVpejZr'>
                 {' '}
                 <Icon icon='skill-icons:instagram' />
               </a>

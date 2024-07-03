@@ -81,7 +81,7 @@ const Footer = () => {
 
 
           <IconContainers >
-            <a href='https://www.instagram.com/fullbloomslp'>
+            <a href='https://www.instagram.com/fullbloomslp?igsh=cDNhNncydmVpejZr'>
               {' '}
               <Icon icon='skill-icons:instagram' />
             </a>
