@@ -43,11 +43,11 @@ const Navbar = () => {
             </div>
 
             <div className='facebook-insta-container'>
-              <a href='https://www.instagram.com/invites/contact/?igsh=q3arh3rffdow&utm_content=uzf98fk'>
+              <a href='https://www.instagram.com/fullbloomslp'>
                 {' '}
                 <Icon icon='skill-icons:instagram' />
               </a>
-              <a href='https://www.facebook.com/profile.php?id=61560669335136&mibextid=LQQJ4d'>
+              <a href='https://www.facebook.com/profile.php?id=61560669335136'>
                 {' '}
                 <FacebookIcon
                   xmlns='http://www.w3.org/2000/svg'
