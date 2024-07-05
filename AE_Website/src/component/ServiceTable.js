@@ -15,7 +15,9 @@ import ListItemText from '@mui/material/ListItemText';
 const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
-    fontSize: 15,
+  },
+  table: {
+    fontSize: 28,
   },
 });
 
@@ -48,6 +50,13 @@ const ServiceTable = () => {
     ),
   ];
 
+  const evalProcess = [
+    'Free phone consultation',
+    'Complete intake paperwork',
+    'Complete the evaluation',
+    'Review the results and create a plan for treatment',
+  ];
+
   const areasOfExpertise1 = [
     'Early Intervention',
     'Late Talkers',
@@ -67,94 +76,85 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
+
+
+          <TableTitle background='#008080' fontSize='22px' color='white'>
+              Areas of Expertise
+            </TableTitle>
+
+            <ExpertiseContainer>
+              <div>
+                {areasOfExpertise1.map((area, idx) => {
+                  return (
+                    <div className='area' key={idx} style={{ fontWeight: '100', fontSize: 20}}>
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div>
+                {areasOfExpertise2.map((area, idx) => {
+                  return (
+                    <div className='area' key={idx} style={{ fontWeight: '100', fontSize: 20}}>
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </ExpertiseContainer>
             <TableTitle
               background='#008080'
-              fontSize='20px'
+              fontSize='22px'
               color='white'
               align='center'
             >
               Evaluations
             </TableTitle>
 
-            <Accordion disableGutters>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />} align='center'>
+            <Accordion
+              disableGutters
+              className='eval-process-accordion'
+              style={{ fontSize: '20px' }}
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 What is the evaluation process?
               </AccordionSummary>
 
-              <AccordionDetails>
-                <List
-                  sx={{
-                    width: '100%',
-                    maxWidth: 360,
-                    bgcolor: 'background.paper',
-                  }}
-                  aria-label='contacts'
-                >
-                  <ListItem style={{ gap: '1rem' }}>
-                    <img
-                      src='/check.png'
-                      height={18}
-                      width={18}
-                      alt='check-icon'
-                    />
-
-                    <ListItemText primary='Free phone consultation' />
-                  </ListItem>
-
-                  <ListItem style={{ gap: '0.5rem' }}>
-                    <img
-                      src='/check.png'
-                      height={18}
-                      width={18}
-                      alt='check-icon'
-                    />
-
-                    <ListItemText primary='Complete intake paperwork' />
-                  </ListItem>
-
-                  <ListItem style={{ gap: '0.5rem' }}>
-                    <img
-                      src='/check.png'
-                      height={18}
-                      width={18}
-                      alt='check-icon'
-                    />
-
-                    <ListItemText primary='Complete the evaluation' />
-                  </ListItem>
-
-                  <ListItem style={{ gap: '0.5rem' }}>
-                    <img
-                      src='/check.png'
-                      height={18}
-                      width={18}
-                      alt='check-icon'
-                    />
-
-                    <ListItemText primary='Review the results and create a plan for treatment' />
-                  </ListItem>
-                </List>
-              </AccordionDetails>
+              {evalProcess.map((process, idx) => {
+                return (
+                  <AccordionDetails style={{padding: '0', fontWeight: '100'}}>
+                   <ul>
+                    <li>{process}</li>
+                   </ul>
+                  </AccordionDetails>
+                );
+              })}
             </Accordion>
 
             {rows1.map((row, idx) => {
               return (
-                <Accordion disableGutters key={idx}>
+                <Accordion
+                  disableGutters
+                  key={idx}
+                  style={{ fontSize: '20px' }}
+                >
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     {row.services}
                   </AccordionSummary>
 
-                  <AccordionDetails>{row.description}</AccordionDetails>
+                  <AccordionDetails style={{ fontWeight: '100'}}>{row.description}</AccordionDetails>
                   {idx >= 0 ? (
                     <Button
                       style={{
                         margin: '0.5rem',
                         background: '#008080',
                         color: 'white',
-                        ':hover': {
-                          background: '#008080',
-                        },
+                        marginLeft: '1rem'
                       }}
+                      className="button"
                     >
                       <Link
                         spy={true}
@@ -170,35 +170,7 @@ const ServiceTable = () => {
               );
             })}
 
-            <TableTitle background='#008080' fontSize='20px' color='white'>
-              Areas of Expertise
-            </TableTitle>
-
-            <ExpertiseContainer>
-              <div>
-                {areasOfExpertise1.map((area, idx) => {
-                  return (
-                    <div className='area' key={idx}>
-                      <img src='./star.png' height={18} width={18} alt='star' />
-                      <p>{area}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div>
-                {areasOfExpertise2.map((area, idx) => {
-                  return (
-                    <div className='area' key={idx}>
-                      <img src='./star.png' height={18} width={18} alt='star' />
-                      <p>{area}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </ExpertiseContainer>
-
-            <TableTitle background='#008080' fontSize='20px' color='white'>
+            <TableTitle background='#008080' fontSize='22px' color='white'>
               Payment
             </TableTitle>
 
@@ -209,10 +181,11 @@ const ServiceTable = () => {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls='panel1-content'
                     id='panel1-header'
+                    style={{ fontSize: 20}}
                   >
                     {row.question}
                   </AccordionSummary>
-                  <AccordionDetails>{row.answer}</AccordionDetails>
+                  <AccordionDetails style={{ fontWeight: '100', fontSize: 20}}>{row.answer}</AccordionDetails>
                 </Accordion>
               );
             })}
@@ -242,7 +215,6 @@ const ExpertiseContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   gap: 6rem;
-
 
   .area {
     display: flex;
