@@ -114,7 +114,7 @@ const ServiceTable = () => {
               Evaluations
             </TableTitle>
 
-            <Accordion
+            <StyledAccordion
               disableGutters
               className='eval-process-accordion'
               style={{ fontSize: '20px' }}
@@ -132,11 +132,11 @@ const ServiceTable = () => {
                   </AccordionDetails>
                 );
               })}
-            </Accordion>
+            </StyledAccordion>
 
             {rows1.map((row, idx) => {
               return (
-                <Accordion
+                <StyledAccordion
                   disableGutters
                   key={idx}
                   style={{ fontSize: '20px' }}
@@ -166,7 +166,7 @@ const ServiceTable = () => {
                       </Link>
                     </Button>
                   ) : null}
-                </Accordion>
+                </StyledAccordion>
               );
             })}
 
@@ -176,7 +176,7 @@ const ServiceTable = () => {
 
             {rows2.map((row, idx) => {
               return (
-                <Accordion disableGutters key={idx}>
+                <StyledAccordion disableGutters key={idx}>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls='panel1-content'
@@ -186,7 +186,7 @@ const ServiceTable = () => {
                     {row.question}
                   </AccordionSummary>
                   <AccordionDetails style={{ fontWeight: '100', fontSize: 20}}>{row.answer}</AccordionDetails>
-                </Accordion>
+                </StyledAccordion>
               );
             })}
           </TableContainer>
@@ -238,3 +238,12 @@ const TableTitle = styled.p`
   margin: auto;
   padding: 1rem;
 `;
+
+
+const StyledAccordion = styled(Accordion)`
+
+@media (min-width: 375px) and (max-width: 768px) {
+    padding: 1rem;
+  }
+
+`
