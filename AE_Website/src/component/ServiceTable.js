@@ -132,11 +132,29 @@ const ServiceTable = () => {
               <AccordionDetails style={{ padding: '0', fontWeight: '100' }}>
                 <EvaluationProcessContainer>
                   <p> Free phone consultation</p>
-                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <img
+                    className='arrow-right'
+                    src='/arrow-right.png'
+                    height={30}
+                    width={30}
+                    alt='arrow-right'
+                  />
                   <p>Complete intake paperwork</p>
-                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <img
+                    className='arrow-right'
+                    src='/arrow-right.png'
+                    height={30}
+                    width={30}
+                    alt='arrow-right'
+                  />
                   <p>Complete the evaluation</p>
-                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <img
+                    className='arrow-right'
+                    src='/arrow-right.png'
+                    height={30}
+                    width={30}
+                    alt='arrow-right'
+                  />
                   <p>Review the results and create a plan for treatment</p>
                 </EvaluationProcessContainer>
               </AccordionDetails>
@@ -273,5 +291,8 @@ const EvaluationProcessContainer = styled.div`
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    .arrow-right {
+      transform: rotate(90deg);
+    }
   }
 `;
