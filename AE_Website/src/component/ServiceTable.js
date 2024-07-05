@@ -168,7 +168,7 @@ const ServiceTable = () => {
             })}
 
             <TableTitle background='#008080' fontSize='20px' color='white'>
-              Therapy
+              Areas of Expertise
             </TableTitle>
 
             {rows2.map((row, idx) => {

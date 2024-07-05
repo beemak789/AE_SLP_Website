@@ -178,7 +178,7 @@ const PhilosophyText = styled.div`
   font-weight: 100;
   text-align: start;
   margin-left: 1.2rem;
-  margin-top: -2rem;
+  margin-top: 1rem;
 
   .header-2 {
     font-size: 28px;
