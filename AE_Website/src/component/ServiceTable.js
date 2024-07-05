@@ -76,9 +76,7 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-
-
-          <TableTitle background='#008080' fontSize='22px' color='white'>
+            <TableTitle background='#008080' fontSize='22px' color='white'>
               Areas of Expertise
             </TableTitle>
 
@@ -86,7 +84,11 @@ const ServiceTable = () => {
               <div>
                 {areasOfExpertise1.map((area, idx) => {
                   return (
-                    <div className='area' key={idx} style={{ fontWeight: '100', fontSize: 20}}>
+                    <div
+                      className='area'
+                      key={idx}
+                      style={{ fontWeight: '100', fontSize: 20 }}
+                    >
                       <img src='./star.png' height={18} width={18} alt='star' />
                       <p>{area}</p>
                     </div>
@@ -97,7 +99,11 @@ const ServiceTable = () => {
               <div>
                 {areasOfExpertise2.map((area, idx) => {
                   return (
-                    <div className='area' key={idx} style={{ fontWeight: '100', fontSize: 20}}>
+                    <div
+                      className='area'
+                      key={idx}
+                      style={{ fontWeight: '100', fontSize: 20 }}
+                    >
                       <img src='./star.png' height={18} width={18} alt='star' />
                       <p>{area}</p>
                     </div>
@@ -123,15 +129,17 @@ const ServiceTable = () => {
                 What is the evaluation process?
               </AccordionSummary>
 
-              {evalProcess.map((process, idx) => {
-                return (
-                  <AccordionDetails style={{padding: '0', fontWeight: '100'}}>
-                   <ul>
-                    <li>{process}</li>
-                   </ul>
-                  </AccordionDetails>
-                );
-              })}
+              <AccordionDetails style={{ padding: '0', fontWeight: '100' }}>
+                <EvaluationProcessContainer>
+                  <p> Free phone consultation</p>
+                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <p>Complete intake paperwork</p>
+                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <p>Complete the evaluation</p>
+                  <img src="/arrow-right.png" height={30} width={30} alt="arrow-right"/>
+                  <p>Review the results and create a plan for treatment</p>
+                </EvaluationProcessContainer>
+              </AccordionDetails>
             </StyledAccordion>
 
             {rows1.map((row, idx) => {
@@ -145,16 +153,18 @@ const ServiceTable = () => {
                     {row.services}
                   </AccordionSummary>
 
-                  <AccordionDetails style={{ fontWeight: '100'}}>{row.description}</AccordionDetails>
+                  <AccordionDetails style={{ fontWeight: '100' }}>
+                    {row.description}
+                  </AccordionDetails>
                   {idx >= 0 ? (
                     <Button
                       style={{
                         margin: '0.5rem',
                         background: '#008080',
                         color: 'white',
-                        marginLeft: '1rem'
+                        marginLeft: '1rem',
                       }}
-                      className="button"
+                      className='button'
                     >
                       <Link
                         spy={true}
@@ -181,11 +191,13 @@ const ServiceTable = () => {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls='panel1-content'
                     id='panel1-header'
-                    style={{ fontSize: 20}}
+                    style={{ fontSize: 20 }}
                   >
                     {row.question}
                   </AccordionSummary>
-                  <AccordionDetails style={{ fontWeight: '100', fontSize: 20}}>{row.answer}</AccordionDetails>
+                  <AccordionDetails style={{ fontWeight: '100', fontSize: 20 }}>
+                    {row.answer}
+                  </AccordionDetails>
                 </StyledAccordion>
               );
             })}
@@ -239,11 +251,27 @@ const TableTitle = styled.p`
   padding: 1rem;
 `;
 
-
 const StyledAccordion = styled(Accordion)`
-
-@media (min-width: 375px) and (max-width: 768px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     padding: 1rem;
   }
+`;
 
-`
+const EvaluationProcessContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
