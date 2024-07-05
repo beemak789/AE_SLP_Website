@@ -21,7 +21,8 @@ const Resources = () => {
             What is Speech Language Therapy and how can a Speech Language
             Pathologist help?{' '}
           </h3>
-          <Accordion disableGutters>
+          <Accordion disableGutters style={{fontSize: '20px'}}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               Learn More
             </AccordionSummary>
@@ -108,7 +109,7 @@ const ResourceBox = styled.div`
 
   .resource-header {
     color: #8e3e63;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
   }
 `;

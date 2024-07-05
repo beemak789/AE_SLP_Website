@@ -71,6 +71,7 @@ const SingleTestimonialCard = styled.div`
   margin: auto;
   line-height: 15pt;
   padding: 3rem;
+  font-size: 20px;
 
   @media (min-width: 375px) and (max-width: 768px) {
     margin: auto;

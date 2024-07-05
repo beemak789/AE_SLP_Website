@@ -172,7 +172,7 @@ const FamilyImg = styled.img`
 `;
 
 const PhilosophyText = styled.div`
-  font-size: 18px;
+  font-size: 19px;
   padding: 1.2rem;
   line-height: 16pt;
   font-weight: 100;
