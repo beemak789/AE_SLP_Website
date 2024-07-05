@@ -11,7 +11,7 @@ const AboutMe = () => {
         <ProfileImg src='/amyElderProfile.jpg' alt='profile-pic'></ProfileImg>
         <AboutMeParagraphContainer>
           <div className='clinician-header-container'>
-            <p className='clinician-name'>Amy Elder</p>
+            <p className='clinician-name'>Amy Elder MA, CCC-SLP</p>
             <p className='clinician-title'>
               <i>Owner and Speech-Language Pathologist</i>
             </p>

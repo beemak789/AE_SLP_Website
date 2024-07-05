@@ -8,12 +8,15 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 
 const theme = createTheme({
   typography: {
     fontFamily: 'Solway',
     fontSize: 15,
-  },
+  }
 });
 
 const ServiceTable = () => {
@@ -65,9 +68,71 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-            <TableTitle background='#008080' fontSize='20px' color='white'>
+            <TableTitle background='#008080' fontSize='20px' color='white' align="center">
               Evaluations
             </TableTitle>
+
+            <Accordion disableGutters>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} align="center">
+                What is the evaluation process?
+              </AccordionSummary>
+
+              <AccordionDetails>
+                <List
+                  sx={{
+                    width: '100%',
+                    maxWidth: 360,
+                    bgcolor: 'background.paper',
+
+                  }}
+                  aria-label='contacts'
+                >
+                  <ListItem style={{ gap: '1rem' }}>
+                    <img
+                      src='/check.png'
+                      height={18}
+                      width={18}
+                      alt='check-icon'
+                    />
+
+                    <ListItemText primary='Free phone consultation' />
+                  </ListItem>
+
+                  <ListItem style={{ gap: '1rem' }}>
+                    <img
+                      src='/check.png'
+                      height={18}
+                      width={18}
+                      alt='check-icon'
+                    />
+
+                    <ListItemText primary='Complete intake paperwork' />
+                  </ListItem>
+
+                  <ListItem style={{ gap: '1rem' }}>
+                    <img
+                      src='/check.png'
+                      height={18}
+                      width={18}
+                      alt='check-icon'
+                    />
+
+                    <ListItemText primary='Complete the evaluation' />
+                  </ListItem>
+
+                  <ListItem style={{ gap: '1rem' }}>
+                    <img
+                      src='/check.png'
+                      height={18}
+                      width={18}
+                      alt='check-icon'
+                    />
+
+                    <ListItemText primary='Review the results and create a plan for treatment' />
+                  </ListItem>
+                </List>
+              </AccordionDetails>
+            </Accordion>
 
             {rows1.map((row, idx) => {
               return (
@@ -77,7 +142,7 @@ const ServiceTable = () => {
                   </AccordionSummary>
 
                   <AccordionDetails>{row.description}</AccordionDetails>
-                  {idx === 0 ? (
+                  {idx >= 0 ? (
                     <Button
                       style={{
                         margin: '0.5rem',
@@ -136,6 +201,7 @@ const TableParent = styled.div`
   border-radius: 5px;
   width: 90%;
   margin: auto;
+  justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 `;
