@@ -13,10 +13,10 @@ const Testimonials = () => {
         Testimonials
       </Divider>
 
-      <div className='hear-from'>
-        <p>Our happy clients</p>
-        <p className='about-tag'>on their experience with us</p>
-      </div>
+      <p className='hear-from'>
+
+      Hear from some of our satisfied clients
+      </p>
 
       <Carousel
         autoPlay={true}

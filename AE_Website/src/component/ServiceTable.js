@@ -48,6 +48,20 @@ const ServiceTable = () => {
     ),
   ];
 
+  const areasOfExpertise1 = [
+    'Early Intervention',
+    'Late Talkers',
+    'Articulation Disorders',
+    'Receptive and Expressive Language Disorders',
+  ];
+
+  const areasOfExpertise2 = [
+    'Childhood Apraxia of Speech',
+    'Phonological Disorders',
+    'Literacy',
+    'Gestalt Language Development',
+  ];
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -87,7 +101,7 @@ const ServiceTable = () => {
                     <ListItemText primary='Free phone consultation' />
                   </ListItem>
 
-                  <ListItem style={{ gap: '1rem' }}>
+                  <ListItem style={{ gap: '0.5rem' }}>
                     <img
                       src='/check.png'
                       height={18}
@@ -98,7 +112,7 @@ const ServiceTable = () => {
                     <ListItemText primary='Complete intake paperwork' />
                   </ListItem>
 
-                  <ListItem style={{ gap: '1rem' }}>
+                  <ListItem style={{ gap: '0.5rem' }}>
                     <img
                       src='/check.png'
                       height={18}
@@ -109,7 +123,7 @@ const ServiceTable = () => {
                     <ListItemText primary='Complete the evaluation' />
                   </ListItem>
 
-                  <ListItem style={{ gap: '1rem' }}>
+                  <ListItem style={{ gap: '0.5rem' }}>
                     <img
                       src='/check.png'
                       height={18}
@@ -160,6 +174,29 @@ const ServiceTable = () => {
               Areas of Expertise
             </TableTitle>
 
+            <ExpertiseContainer>
+              <div>
+                {areasOfExpertise1.map((area, idx) => {
+                  return (
+                    <div className='area' key={idx}>
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div>
+                {areasOfExpertise2.map((area, idx) => {
+                  return (
+                    <div className='area' key={idx}>
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </ExpertiseContainer>
 
             <TableTitle background='#008080' fontSize='20px' color='white'>
               Payment
@@ -198,6 +235,27 @@ const TableParent = styled.div`
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+`;
+
+const ExpertiseContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+
+
+  .area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding: 1rem;
+  }
 `;
 
 const TableTitle = styled.p`
