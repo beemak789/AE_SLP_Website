@@ -13,10 +13,7 @@ const Testimonials = () => {
         Testimonials
       </Divider>
 
-      <p className='hear-from'>
-
-      Hear from some of our satisfied clients
-      </p>
+      <p className='hear-from'>Hear from some of our satisfied clients</p>
 
       <Carousel
         autoPlay={true}
@@ -32,7 +29,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, idx) => {
           return (
             <SingleTestimonialCard key={idx}>
-              <img src='/quotation.png' height={10} width={10} alt=""/>
+              <img src='/quotation.png' height={10} width={10} alt='' />
               <div key={idx} className='single-testimonial'>
                 {testimonial}{' '}
               </div>
