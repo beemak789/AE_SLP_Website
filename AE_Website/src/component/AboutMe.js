@@ -50,7 +50,7 @@ const AboutMe = () => {
       </AboutMeSection>
 
       <OurPhilosophyContainer>
-        <FamilyImg src='/family.jpg' />
+        <FamilyImg src='/workingWithChild.jpg' />
         <PhilosophyText>
           <p className='header-2'>
             <b>Our Philosophy</b>
