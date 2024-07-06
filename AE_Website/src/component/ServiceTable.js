@@ -235,7 +235,7 @@ const TableParent = styled.div`
   flex-direction: row;
   margin-top: 1rem;
   border-radius: 5px;
-  width: 90%;
+  width: 95%;
   margin: auto;
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
