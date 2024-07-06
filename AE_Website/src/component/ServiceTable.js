@@ -76,41 +76,7 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-            <TableTitle background='#008080' fontSize='22px' color='white'>
-              Areas of Expertise
-            </TableTitle>
 
-            <ExpertiseContainer>
-              <div>
-                {areasOfExpertise1.map((area, idx) => {
-                  return (
-                    <div
-                      className='area'
-                      key={idx}
-                      style={{ fontWeight: '100', fontSize: 20 }}
-                    >
-                      <img src='./star.png' height={18} width={18} alt='star' />
-                      <p>{area}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div>
-                {areasOfExpertise2.map((area, idx) => {
-                  return (
-                    <div
-                      className='area'
-                      key={idx}
-                      style={{ fontWeight: '100', fontSize: 20 }}
-                    >
-                      <img src='./star.png' height={18} width={18} alt='star' />
-                      <p>{area}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </ExpertiseContainer>
             <TableTitle
               background='#008080'
               fontSize='22px'
@@ -197,6 +163,42 @@ const ServiceTable = () => {
                 </StyledAccordion>
               );
             })}
+
+            <TableTitle background='#008080' fontSize='22px' color='white'>
+              Areas of Expertise
+            </TableTitle>
+
+            <ExpertiseContainer>
+              <div>
+                {areasOfExpertise1.map((area, idx) => {
+                  return (
+                    <div
+                      className='area'
+                      key={idx}
+                      style={{ fontWeight: '100', fontSize: 20 }}
+                    >
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div>
+                {areasOfExpertise2.map((area, idx) => {
+                  return (
+                    <div
+                      className='area'
+                      key={idx}
+                      style={{ fontWeight: '100', fontSize: 20 }}
+                    >
+                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <p>{area}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </ExpertiseContainer>
 
             <TableTitle background='#008080' fontSize='22px' color='white'>
               Payment
