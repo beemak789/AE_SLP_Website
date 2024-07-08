@@ -30,7 +30,8 @@ const Testimonials = () => {
           return (
             <SingleTestimonialCard key={idx}>
               <div key={idx} className='single-testimonial'>
-              <b>"</b>{testimonial}{' '}<b>"</b>
+                <b>"</b>
+                {testimonial} <b>"</b>
               </div>
             </SingleTestimonialCard>
           );
@@ -45,7 +46,6 @@ export default Testimonials;
 const TestimonialsContainer = styled.div`
   .fancy {
     font-size: 35px;
-    font-weight: 300;
     text-align: center;
     color: #023020;
   }
@@ -72,8 +72,11 @@ const SingleTestimonialCard = styled.div`
   line-height: 15pt;
   padding: 3rem;
   font-size: 20px;
+  width: 85%;
+  font-weight: 100pt;
 
   @media (min-width: 375px) and (max-width: 768px) {
     margin: auto;
+    padding: 2rem;
   }
 `;

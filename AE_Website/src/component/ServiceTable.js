@@ -76,7 +76,6 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-
             <TableTitle
               background='#008080'
               fontSize='22px'
@@ -140,26 +139,18 @@ const ServiceTable = () => {
                   <AccordionDetails style={{ fontWeight: '100' }}>
                     {row.description}
                   </AccordionDetails>
-                  {idx >= 0 ? (
-                    <Button
-                      style={{
-                        margin: '0.5rem',
-                        background: '#008080',
-                        color: 'white',
-                        marginLeft: '1rem',
-                      }}
-                      className='button'
-                    >
-                      <Link
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                        to='contactUs'
-                      >
-                        Request an Evaluation
-                      </Link>
-                    </Button>
-                  ) : null}
+
+                  <Link
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    to='contactUs'
+                    className='request-eval-container'
+                  >
+                    <div>
+                      <button className='button'>Request an Evaluation</button>
+                    </div>
+                  </Link>
                 </StyledAccordion>
               );
             })}
@@ -274,6 +265,29 @@ const TableTitle = styled.p`
 const StyledAccordion = styled(Accordion)`
   @media (min-width: 375px) and (max-width: 768px) {
     padding: 1rem;
+  }
+
+  .request-eval-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .button {
+      height: 3rem;
+      width: 15rem;
+      font-size: 18px;
+      font-family: 'Solway' !important;
+      cursor: pointer;
+      background-color: #008080;
+      border-radius: 4px;
+      color: white;
+      margin-bottom: 1rem;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #00a2a2;
+    }
   }
 `;
 

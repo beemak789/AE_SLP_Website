@@ -21,12 +21,11 @@ const Resources = () => {
             What is Speech Language Therapy and how can a Speech Language
             Pathologist help?{' '}
           </h3>
-          <Accordion disableGutters style={{fontSize: '20px'}}
-          >
+          <Accordion disableGutters style={{ fontSize: '20px' }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               Learn More
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{ fontSize: '20px' }}>
               <p>
                 Pediatric speech language pathologists assess and treat
                 communication disorders and delays in children. These disorders
@@ -77,6 +76,54 @@ const Resources = () => {
               </ul>
             </AccordionDetails>
           </Accordion>
+
+          <h3 className='resource-header'>Informational Websites</h3>
+          <Accordion disableGutters style={{ fontSize: '20px' }}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              Learn More
+            </AccordionSummary>
+            <StyledAccordionDetails>
+              <StyledList>
+                <li>
+                  <a
+                    className='link'
+                    href='https://www.asha.org/public/developmental-milestones/
+'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    ASHA Developmental Milestones
+                  </a>
+                </li>
+
+                <li>
+                  {' '}
+                  <a
+                    className='link'
+                    href='https://www.apraxia-kids.org/
+'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Apraxia Kids
+                  </a>
+                </li>
+
+                <li>
+                  {' '}
+                  <a
+                    className='link'
+                    href='https://www.autismspeaks.org/
+'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Autism Speaks
+                  </a>
+                </li>
+              </StyledList>
+            </StyledAccordionDetails>
+          </Accordion>
         </ResourceBox>
       </ResourcesList>
     </ResourcesContainer>
@@ -105,11 +152,29 @@ const ResourcesList = styled.div`
 
 const ResourceBox = styled.div`
   margin: auto;
-  max-width: 80%;
+  max-width: 95%;
 
   .resource-header {
     color: #8e3e63;
     font-size: 22px;
     font-weight: 500;
+  }
+`;
+
+const StyledAccordionDetails = styled(AccordionDetails)`
+  font-size: 20px;
+`;
+
+const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: #8e3e63;
   }
 `;

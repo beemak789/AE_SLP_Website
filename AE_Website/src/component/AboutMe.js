@@ -64,14 +64,25 @@ const AboutMe = () => {
           <p>
             We understand the unique needs of children and the critical role
             that communication plays in their development, relationships, and
-            overall well-being. Our philosophy is centered around compassion,
-            expertise, and a deep commitment to helping children reach their
-            full potential.
+            overall well-being.
           </p>
 
-
           <p>
-            >>>>> Some additional text here >>>>> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+            Our neurodiversity-affirming practice celebrates that communication
+            can take many forms, respecting each individual's unique way of
+            expressing themselves. We strive to create an environment where all
+            forms of communication are valued and supported, and where every
+            client is empowered to achieve their full potential.{' '}
+          </p>
+
+          <p className='header-3'>
+            <b>Our Location</b>
+          </p>
+          <p>
+            Our services are primarily provided at our clinic in Cornelius, NC.
+            We have two therapy rooms as well as a comfortable waiting room for
+            families. We are occasionally able to accommodate home or school
+            visits based on location and our availability.{' '}
           </p>
         </PhilosophyText>
       </OurPhilosophyContainer>
@@ -108,7 +119,6 @@ const ProfileImg = styled.img`
   border-radius: 5px;
   margin-top: -0.5rem;
   padding: 1.5rem;
-
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
@@ -172,18 +182,25 @@ const FamilyImg = styled.img`
 `;
 
 const PhilosophyText = styled.div`
-  font-size: 19px;
+  font-size: 18px;
   padding: 1.2rem;
   line-height: 16pt;
   font-weight: 100;
   text-align: start;
   margin-left: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 
   .header-2 {
     font-size: 28px;
     text-align: start;
     color: #8e3e63;
+  }
+
+  .header-3 {
+    font-size: 28px;
+    text-align: start;
+    color: #8e3e63;
+    margin-top: 4rem;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
