@@ -79,7 +79,6 @@ const ContactTextboxContainer = styled.div`
   gap: 2rem;
   margin-top: 2rem;
   justify-content: space-between;
-  color:
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
