@@ -136,6 +136,7 @@ const FormContainer = styled.form`
     margin: auto;
     padding: 0rem;
     padding-bottom: 1rem;
+    box-shadow: none;
   }
 `;
 
