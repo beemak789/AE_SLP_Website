@@ -17,7 +17,12 @@ const ContactMe = () => {
     <ThemeProvider theme={theme}>
       <ContactMeContainer name='contactUs'>
         <Divider
-          style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
+          style={{
+            color: '#008080',
+            fontWeight: '100',
+            fontSize: '32px',
+            width: '100%',
+          }}
         >
           Contact Us
         </Divider>
