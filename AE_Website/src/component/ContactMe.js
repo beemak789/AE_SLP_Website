@@ -69,13 +69,15 @@ export default ContactMe;
 const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 3rem;
+  padding: 3rem;
   align-items: center;
 `;
 
 const ContactTextboxContainer = styled.div`
   display: flex;
   gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-between;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
