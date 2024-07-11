@@ -27,6 +27,8 @@ const ContactMe = () => {
           Contact Us
         </Divider>
 
+        <h1>Got questions? Get in touch with us today.</h1>
+
         <ContactTextboxContainer>
           <GetInTouch>
             <img src='/email.png' alt='email-icon' height={50} width={50} />
@@ -72,6 +74,11 @@ const ContactMeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
+
+  h1 {
+    font-weight: 100;
+    text-align: center;
+  }
 `;
 
 const ContactTextboxContainer = styled.div`
@@ -79,6 +86,7 @@ const ContactTextboxContainer = styled.div`
   gap: 2rem;
   margin-top: 2rem;
   justify-content: space-between;
+
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
@@ -123,7 +131,7 @@ const GetInTouch = styled.div`
   font-size: 18px;
   width: 50%;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
 
   p {
     color: #008080;
