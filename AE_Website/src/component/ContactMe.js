@@ -29,7 +29,9 @@ const ContactMe = () => {
 
         <ContactTextboxContainer>
           <GetInTouch>
+          <img src="/email.png" alt="email-icon" height={70}  width={70}/>
             <h1>Get in touch!</h1>
+
             <p className="interested-in-speech">
               Interested in speech therapy? Contact us to learn about the
               services we provide and have any questions answered.
