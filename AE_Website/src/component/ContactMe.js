@@ -30,7 +30,6 @@ const ContactMe = () => {
         <ContactTextboxContainer>
           <GetInTouch>
             <img src='/email.png' alt='email-icon' height={50} width={50} />
-            <h1>Get in touch!</h1>
 
             <p className='interested-in-speech'>
               Interested in speech therapy? Contact us to learn about the
@@ -80,6 +79,7 @@ const ContactTextboxContainer = styled.div`
   gap: 2rem;
   margin-top: 2rem;
   justify-content: space-between;
+  color:
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
@@ -124,11 +124,7 @@ const GetInTouch = styled.div`
   font-size: 18px;
   width: 50%;
   margin: auto;
-
-  h1 {
-    text-align: center;
-    font-weight: 100;
-  }
+  margin-top: 5rem;
 
   p {
     color: #008080;
@@ -140,7 +136,6 @@ const GetInTouch = styled.div`
     @media (min-width: 375px) and (max-width: 768px) {
       font-size: 18px;
     }
-
   }
 
   @media (min-width: 375px) and (max-width: 768px) {

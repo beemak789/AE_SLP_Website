@@ -6,6 +6,7 @@ import ContactMe from './ContactMe';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Resources from './Resources';
+import FooterText from './FooterText';
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Testimonials />
       <ContactMe />
       <Footer />
+      <FooterText/>
     </>
   );
 };

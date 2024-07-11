@@ -107,7 +107,7 @@ const Form = () => {
         className='submit-button'
         variant='contained'
         type='submit'
-        style={{ marginTop: '2rem', background: '#008080' }}
+        style={{ marginTop: '2rem', background: '#8e3e63', color: 'white' }}
         disabled={!name || !email || !phoneNumber || !message}
       >
         Submit

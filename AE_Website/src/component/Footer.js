@@ -123,7 +123,6 @@ const Footer = () => {
           </div>
         </ContactInfoContainer>
       </FooterContent>
-      <p className='footer-text'>&copy; 2024 Designed by Brandy Mak</p>
     </FooterContainer>
   );
 };

@@ -219,7 +219,3 @@ const FacebookIcon = styled.svg`
   width: 1.2em;
   margin-top: -0.2rem;
 `;
-
-// @media (min-width: 600px) and (max-width: 768px) {
-
-// }
