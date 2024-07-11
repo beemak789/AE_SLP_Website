@@ -57,10 +57,6 @@ const TestimonialsContainer = styled.div`
     color: #8e3e63;
     display: flex;
     flex-direction: column;
-    .about-tag {
-      margin-top: -1rem;
-    }
-
     @media (min-width: 375px) and (max-width: 768px) {
     padding: 2rem;
   }
@@ -81,5 +77,6 @@ const SingleTestimonialCard = styled.div`
 
   @media (min-width: 375px) and (max-width: 768px) {
     padding: 2rem;
+    margin-top: -1rem;
   }
 `;
