@@ -29,10 +29,10 @@ const ContactMe = () => {
 
         <ContactTextboxContainer>
           <GetInTouch>
-          <img src="/email.png" alt="email-icon" height={70}  width={70}/>
+            <img src='/email.png' alt='email-icon' height={70} width={70} />
             <h1>Get in touch!</h1>
 
-            <p className="interested-in-speech">
+            <p className='interested-in-speech'>
               Interested in speech therapy? Contact us to learn about the
               services we provide and have any questions answered.
             </p>
@@ -135,6 +135,11 @@ const GetInTouch = styled.div`
 
   .interested-in-speech {
     padding: 1.5rem;
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      font-size: 18px;
+    }
+
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -155,5 +160,8 @@ const AddressContainer = styled.div`
     line-height: 3pt;
     text-align: start;
     font-size: 18px;
+    @media (min-width: 375px) and (max-width: 768px) {
+      font-size: 15px;
+    }
   }
 `;
