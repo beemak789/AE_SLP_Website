@@ -77,8 +77,9 @@ const SingleTestimonialCard = styled.div`
   font-size: 20px;
   font-weight: 100pt;
   margin: auto;
+  text-align: center;
 
   @media (min-width: 375px) and (max-width: 768px) {
-    padding: 3rem;
+    padding: 2rem;
   }
 `;
