@@ -60,6 +60,10 @@ const TestimonialsContainer = styled.div`
     .about-tag {
       margin-top: -1rem;
     }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+    padding: 2rem;
+  }
   }
 `;
 
@@ -68,15 +72,13 @@ const SingleTestimonialCard = styled.div`
   background: white;
   color: black;
   display: flex;
-  margin: auto;
   line-height: 15pt;
-  padding: 3rem;
+  padding: 2rem;
   font-size: 20px;
-  width: 85%;
   font-weight: 100pt;
+  margin: auto;
 
   @media (min-width: 375px) and (max-width: 768px) {
-    margin: auto;
-    padding: 2rem;
+    padding: 3rem;
   }
 `;
