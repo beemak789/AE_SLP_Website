@@ -30,7 +30,7 @@ const ContactMe = () => {
         <ContactTextboxContainer>
           <GetInTouch>
             <h1>Get in touch!</h1>
-            <p>
+            <p className="interested-in-speech">
               Interested in speech therapy? Contact us to learn about the
               services we provide and have any questions answered.
             </p>
@@ -129,6 +129,10 @@ const GetInTouch = styled.div`
 
   p {
     color: #008080;
+  }
+
+  .interested-in-speech {
+    padding: 1.5rem;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
