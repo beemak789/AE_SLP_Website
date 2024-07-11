@@ -121,7 +121,6 @@ const ProfileImg = styled.img`
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
-    height: 100%;
   }
 `;
 
@@ -175,7 +174,6 @@ const FamilyImg = styled.img`
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
-    height: 90%;
   }
 `;
 
