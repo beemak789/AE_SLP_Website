@@ -147,6 +147,6 @@ const AddressContainer = styled.div`
   .address {
     line-height: 3pt;
     text-align: start;
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
