@@ -69,7 +69,6 @@ export default ContactMe;
 const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3rem;
   align-items: center;
 `;
 
@@ -118,10 +117,10 @@ const ContactDetailsContainer = styled.div`
 `;
 
 const GetInTouch = styled.div`
-  padding: 1rem;
   text-align: center;
   font-size: 18px;
   width: 50%;
+  margin: auto;
 
   h1 {
     text-align: center;
