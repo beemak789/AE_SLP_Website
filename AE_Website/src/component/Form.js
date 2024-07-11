@@ -134,7 +134,7 @@ const FormContainer = styled.form`
 
   @media (min-width: 375px) and (max-width: 768px) {
     margin: auto;
-    padding: 0rem;
+    padding: 1rem;
     padding-bottom: 1rem;
     box-shadow: none;
   }
