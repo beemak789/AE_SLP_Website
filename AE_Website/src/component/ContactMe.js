@@ -27,7 +27,7 @@ const ContactMe = () => {
           Contact Us
         </Divider>
 
-        <h1>Got questions? Get in touch with us today.</h1>
+        <h1>Get in touch with us today.</h1>
 
         <ContactTextboxContainer>
           <GetInTouch>
