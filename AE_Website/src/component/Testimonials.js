@@ -58,8 +58,8 @@ const TestimonialsContainer = styled.div`
     display: flex;
     flex-direction: column;
     @media (min-width: 375px) and (max-width: 768px) {
-    padding: 2rem;
-  }
+      padding: 2rem;
+    }
   }
 `;
 

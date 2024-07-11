@@ -71,16 +71,11 @@ const ContactMeContainer = styled.div`
   flex-direction: column;
   padding-bottom: 3rem;
   align-items: center;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const ContactTextboxContainer = styled.div`
   display: flex;
   gap: 2rem;
-  padding: 2rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
