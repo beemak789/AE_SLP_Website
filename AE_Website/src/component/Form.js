@@ -50,6 +50,7 @@ const Form = () => {
     <FormContainer onSubmit={submitForm}>
       <h3>Request an Evaluation</h3>
 
+      <img src='/request.png' alt='request' height={50} width={50} />
       <InputFieldContainer>
         <Input
           type='text'
@@ -123,8 +124,12 @@ const FormContainer = styled.form`
   align-items: center;
   padding: 2rem;
   margin: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 1rem;
+
+  h3 {
+    font-size: 22px;
+    color: #8e3e63;
+  }
 
   .status-messsage {
     color: #008080;
@@ -153,7 +158,6 @@ const TextAreaContainer = styled.div`
     align: center;
     margin: auto;
     margin-top: 2rem;
-
 
     @media (min-width: 375px) and (max-width: 768px) {
       width: 90%;

@@ -6,11 +6,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 
 const theme = createTheme({
   typography: {
@@ -50,12 +46,6 @@ const ServiceTable = () => {
     ),
   ];
 
-  const evalProcess = [
-    'Free phone consultation',
-    'Complete intake paperwork',
-    'Complete the evaluation',
-    'Review the results and create a plan for treatment',
-  ];
 
   const areasOfExpertise1 = [
     'Early Intervention',

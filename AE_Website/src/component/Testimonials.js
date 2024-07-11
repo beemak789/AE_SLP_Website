@@ -31,7 +31,7 @@ const Testimonials = () => {
             <SingleTestimonialCard key={idx}>
               <div key={idx} className='single-testimonial'>
                 <b>"</b>
-                {testimonial} <b>"</b>
+                {testimonial}<b>"</b>
               </div>
             </SingleTestimonialCard>
           );

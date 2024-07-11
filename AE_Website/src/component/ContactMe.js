@@ -29,7 +29,7 @@ const ContactMe = () => {
 
         <ContactTextboxContainer>
           <GetInTouch>
-            <img src='/email.png' alt='email-icon' height={70} width={70} />
+            <img src='/email.png' alt='email-icon' height={50} width={50} />
             <h1>Get in touch!</h1>
 
             <p className='interested-in-speech'>
@@ -72,6 +72,7 @@ const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 `;
 
 const ContactTextboxContainer = styled.div`
