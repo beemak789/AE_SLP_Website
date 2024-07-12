@@ -78,6 +78,9 @@ const ContactMeContainer = styled.div`
   h1 {
     font-weight: 100;
     text-align: center;
+    @media (min-width: 375px) and (max-width: 768px) {
+    padding: 2rem;
+  }
   }
 `;
 
