@@ -50,7 +50,11 @@ const ContactMe = () => {
                 </div>
               </NumberEmailContainer>
               <AddressContainer>
-                <img src='/map.png' height={28} width={28} alt='' />
+                <a href='https://www.google.com/maps/place/17111+Kenton+Dr+%23206b,+Cornelius,+NC+28031/@35.4492384,-80.8899337,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a92fb6b4db01:0x80234f9b85d475a4!8m2!3d35.4492384!4d-80.8899337?entry=ttu' target='_blank' rel="noreferrer">
+                  {' '}
+                  <img src='/map.png' height={28} width={28} alt=''/>
+                </a>
+
                 <div className='address'>
                   <p>Kenton Place</p>
                   <p>17111 Kenton Drive Suite 206B</p>
@@ -79,8 +83,8 @@ const ContactMeContainer = styled.div`
     font-weight: 100;
     text-align: center;
     @media (min-width: 375px) and (max-width: 768px) {
-    padding: 2rem;
-  }
+      padding: 2rem;
+    }
   }
 `;
 
@@ -89,7 +93,6 @@ const ContactTextboxContainer = styled.div`
   gap: 2rem;
   margin-top: 2rem;
   justify-content: space-between;
-
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;

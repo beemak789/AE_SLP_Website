@@ -79,8 +79,7 @@ const Footer = () => {
         <ContactInfoContainer>
           <h3>Contact Us</h3>
 
-
-          <IconContainers >
+          <IconContainers>
             <a href='https://www.instagram.com/fullbloomslp?igsh=cDNhNncydmVpejZr'>
               {' '}
               <Icon icon='skill-icons:instagram' />
@@ -105,7 +104,15 @@ const Footer = () => {
           </IconContainers>
 
           <div className='address-container'>
-            <img src='/map.png' height={12} width={12} alt='' />
+            <a
+              href='https://www.google.com/maps/place/17111+Kenton+Dr+%23206b,+Cornelius,+NC+28031/@35.4492384,-80.8899337,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a92fb6b4db01:0x80234f9b85d475a4!8m2!3d35.4492384!4d-80.8899337?entry=ttu'
+              target='_blank'
+              rel='noreferrer'
+            >
+              {' '}
+              <img src='/map.png' height={12} width={12} alt='' />
+            </a>
+
             <div className='address'>
               <p>Kenton Place</p>
               <p>17111 Kenton Drive Suite 206B</p>
@@ -154,7 +161,6 @@ const FooterContent = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -198,10 +204,10 @@ const QuickLinksContainer = styled.div`
 `;
 
 const IconContainers = styled.div`
-display: flex;
-gap: 1rem;
-padding: 0.5rem;
-`
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+`;
 
 const ContactInfoContainer = styled.div`
   display: flex;
