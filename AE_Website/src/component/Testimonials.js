@@ -31,7 +31,8 @@ const Testimonials = () => {
             <SingleTestimonialCard key={idx}>
               <div key={idx} className='single-testimonial'>
                 <b>"</b>
-                {testimonial}<b>"</b>
+                {testimonial}
+                <b>"</b>
               </div>
             </SingleTestimonialCard>
           );
@@ -44,6 +45,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const TestimonialsContainer = styled.div`
+  height: 350px;
   .fancy {
     font-size: 35px;
     text-align: center;
@@ -60,6 +62,10 @@ const TestimonialsContainer = styled.div`
     @media (min-width: 375px) and (max-width: 768px) {
       padding: 2rem;
     }
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    height: 840px;
   }
 `;
 
