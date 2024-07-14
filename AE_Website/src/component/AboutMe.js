@@ -119,8 +119,11 @@ const ProfileImg = styled.img`
   margin-top: -0.5rem;
   padding: 1.5rem;
 
+
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
+    object-fit: cover;
+    height: auto;
   }
 `;
 
@@ -172,8 +175,11 @@ const FamilyImg = styled.img`
   border-radius: 5px;
   padding: 1.5rem;
 
+
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
+    object-fit: cover;
+    height: auto;
   }
 `;
 
