@@ -23,7 +23,7 @@ const Form = () => {
     setIsLoading(true);
     try {
       e.preventDefault();
-      await fetch('https://formsubmit.co/ajax/speechwithbrandy@gmail.com', {
+      await fetch('https://formsubmit.co/ajax/amye@fullbloomspeechlanguagepathology.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
