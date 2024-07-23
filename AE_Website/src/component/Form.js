@@ -23,17 +23,18 @@ const Form = () => {
     setIsLoading(true);
     try {
       e.preventDefault();
-      await fetch('https://formsubmit.co/ajax/alelderslp@gmail.com', {
+      await fetch('https://yik3q4romd.execute-api.us-east-1.amazonaws.com/dev/contact-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
+          Accept: '*/*'
         },
         body: JSON.stringify({
           name,
-          email,
+          senderEmail: email,
+          receiverEmail: 'alan.alban10@gmail.com',
           phoneNumber,
-          message,
+          message
         }),
       });
 
