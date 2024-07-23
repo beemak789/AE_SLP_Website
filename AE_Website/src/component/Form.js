@@ -32,7 +32,7 @@ const Form = () => {
         body: JSON.stringify({
           name,
           senderEmail: email,
-          receiverEmail: 'alan.alban10@gmail.com',
+          receiverEmail: 'amye@fullbloomspeechlanguagepathology.com',
           phoneNumber,
           message
         }),
