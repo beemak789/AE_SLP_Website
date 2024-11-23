@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 import { Button } from '@mui/material';
 import { Link } from 'react-scroll';
+import DesignedByContainer from './DesignedByContainer';
 
 const Footer = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -12,6 +13,7 @@ const Footer = () => {
   };
 
   return (
+    <>
     <FooterContainer>
       <FooterContent>
         <div className='logo-socials'>
@@ -141,6 +143,8 @@ const Footer = () => {
         </ContactInfoContainer>
       </FooterContent>
     </FooterContainer>
+    <DesignedByContainer/>
+    </>
   );
 };
 
