@@ -24,4 +24,9 @@ export const links = [
     name: 'Contact Us',
   },
 
+  {
+    to: 'careers',
+    name: 'Careers',
+  },
+
 ];

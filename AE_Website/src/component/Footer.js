@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 import { Button } from '@mui/material';
 import { Link } from 'react-scroll';
+import DesignedByContainer from './DesignedByContainer';
 
 const Footer = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -12,6 +13,7 @@ const Footer = () => {
   };
 
   return (
+    <>
     <FooterContainer>
       <FooterContent>
         <div className='logo-socials'>
@@ -74,6 +76,16 @@ const Footer = () => {
           >
             <p>Contact</p>
           </Link>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='careers'
+          >
+            <p>Careers</p>
+          </Link>
         </QuickLinksContainer>
 
         <ContactInfoContainer>
@@ -126,11 +138,13 @@ const Footer = () => {
           </div>
           <div className='info'>
             <img src='/mail.png' height={12} width={12} alt='' />
-            <p>amye@fullbloomspeechlanguagepathology.com</p>
+            <a href='mailto:amye@fullbloomspeechlanguagepathology.com' style={{textDecoration: 'none', color: 'black'}}>amye@fullbloomspeechlanguagepathology.com</a>
           </div>
         </ContactInfoContainer>
       </FooterContent>
     </FooterContainer>
+    <DesignedByContainer/>
+    </>
   );
 };
 

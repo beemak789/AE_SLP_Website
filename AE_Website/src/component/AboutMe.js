@@ -42,7 +42,7 @@ const AboutMe = () => {
               communication goals. Amy has extensive training and expertise with
               a variety of diagnosis including articulation, phonology,
               literacy, childhood apraxia of speech, developmental language
-              disorder, late talkers, gestalt language processing, and pragmatic
+              disorder, late talkers, autism, gestalt language processing, and pragmatic
               language.
             </p>
           </div>
