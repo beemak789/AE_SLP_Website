@@ -14,7 +14,7 @@ const Careers = () => {
       <CareerTextPictureContainer>
         <JobDetailsText>
           <h1>We are blooming!</h1>
-          <IconImg src='/cv.png' alt='cv' />
+          <IconImg src='/sunflower.png' alt='cv' />
           <div>
             Full Bloom Speech Language Pathology is growing, and we are looking
             for an excellent NC Licensed and ASHA certified SLP who is
@@ -80,7 +80,6 @@ const JobDetailsText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${'' /* border: 2px solid red; */}
   line-height: 1.7rem;
   padding: 4rem;
   h1 {
@@ -106,8 +105,7 @@ const JobDetailsText = styled.div`
 const IconImg = styled.img`
   width: 12%;
 
-  @media (min-width: 375px) and (max-width: 768px) {
+  @media (min-width: 365px) and (max-width: 768px) {
     width: 20%;
-    object-fit: cover;
   }
 `;
