@@ -17,12 +17,16 @@ const Careers = () => {
           <IconImg src='/cv.png' alt='cv' />
           <div>
             Full Bloom Speech Language Pathology is growing, and we are looking
-            for an excellent NC Licensed and ASHA certied SLP who is interested
-            in joining our team! If you are interested in learning more, let’s
-            chat! Please send resumes to Amy at{' '}
+            for an excellent NC Licensed and ASHA certified SLP who is
+            interested in joining our team! If you are interested in learning
+            more, let’s chat! Please send resumes to Amy at{' '}
             <a
               href='mailto:amye@fullbloomspeechlanguagepathology.com'
-              style={{ color: '#008080', fontWeight: 400, textDecoration: 'none' }}
+              style={{
+                color: '#008080',
+                fontWeight: 400,
+                textDecoration: 'none',
+              }}
             >
               amye@fullbloomspeechlanguagepathology.com
             </a>
