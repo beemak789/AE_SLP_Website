@@ -138,7 +138,7 @@ const Footer = () => {
           </div>
           <div className='info'>
             <img src='/mail.png' height={12} width={12} alt='' />
-            <p>amye@fullbloomspeechlanguagepathology.com</p>
+            <a href='mailto:amye@fullbloomspeechlanguagepathology.com' style={{textDecoration: 'none', color: 'black'}}>amye@fullbloomspeechlanguagepathology.com</a>
           </div>
         </ContactInfoContainer>
       </FooterContent>
