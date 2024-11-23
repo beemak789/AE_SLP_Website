@@ -74,6 +74,16 @@ const Footer = () => {
           >
             <p>Contact</p>
           </Link>
+
+          <Link
+            className='link'
+            spy={true}
+            smooth={true}
+            duration={500}
+            to='careers'
+          >
+            <p>Careers</p>
+          </Link>
         </QuickLinksContainer>
 
         <ContactInfoContainer>

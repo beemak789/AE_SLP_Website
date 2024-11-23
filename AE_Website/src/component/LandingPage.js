@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Resources from './Resources';
 import FooterText from './FooterText';
+import Careers from './Careers';
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Resources />
       <Testimonials />
       <ContactMe />
+      <Careers />
       <Footer />
       <FooterText/>
     </>
