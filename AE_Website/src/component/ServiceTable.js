@@ -42,10 +42,9 @@ const ServiceTable = () => {
   const rows2 = [
     createData2(
       'What forms of payment do we accept?',
-      'Full Bloom Speech Language Pathology offers private pay/self pay services. We are considered an out of network provider and do not bill your insurance. We will provide a superbill upon request. Please call or email for pricing information. We accept HSA/FSA cards, credit/debit, checks or cash as forms of payment.'
+      'Full Bloom Speech Language Pathology offers private pay/self pay services. We are considered an out of network provider and do not bill your insurance. We will provide a superbill upon request. We accept HSA/FSA cards, credit/debit, checks or cash as forms of payment. Additionally, we are a NCSEAA provider and accept grants from various organizations. Please call or email with any questions and for pricing information.'
     ),
   ];
-
 
   const areasOfExpertise1 = [
     'Early Intervention',
@@ -58,7 +57,7 @@ const ServiceTable = () => {
     'Childhood Apraxia of Speech',
     'Phonological Disorders',
     'Literacy',
-    'Gestalt Language Development',
+    'Autism and Gestalt Language',
   ];
 
   return (
