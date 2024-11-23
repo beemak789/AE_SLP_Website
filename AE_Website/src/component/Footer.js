@@ -24,7 +24,7 @@ const Footer = () => {
           >
             <Link spy={true} smooth={true} duration={500} to='nav'>
               <LogoImage
-                className='nav-leaf-icon'
+                className='nav'
                 src='/logo.jpg'
                 alt='leafIcon logo'
                 width={270}

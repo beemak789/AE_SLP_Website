@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <NavBarContainer>
+      <NavBarContainer name="nav">
         <ContactInfoContainer>
           <div>
             <span>(937)-369-6613</span>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
         <ToolbarContainer>
           <Link spy={true} smooth={true} duration={500} to='nav'>
-            <LogoImg src='/logo.jpg'></LogoImg>
+            <LogoImg src='/logo.jpg' className='nav'></LogoImg>
           </Link>
 
           <StyledBox>

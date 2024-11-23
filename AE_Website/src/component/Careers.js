@@ -103,10 +103,11 @@ const JobDetailsText = styled.div`
   }
 `;
 const IconImg = styled.img`
-  width: 12%;
+  width: 5rem;
+  height: 5rem;
 
   @media (min-width: 365px) and (max-width: 768px) {
-    width: 20%;
-    height: auto;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 `;
