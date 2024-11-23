@@ -108,5 +108,6 @@ const IconImg = styled.img`
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 20%;
+    object-fit: cover;
   }
 `;
