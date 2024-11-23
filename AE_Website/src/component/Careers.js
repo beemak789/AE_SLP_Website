@@ -92,8 +92,9 @@ const JobDetailsText = styled.div`
 
   @media (min-width: 375px) and (max-width: 768px) {
     div {
-      font-size: 14px;
+      font-size: 15px;
       padding: 0;
+      font-weight: 400;
     }
     text-align: center;
   }
