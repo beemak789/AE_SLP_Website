@@ -42,8 +42,14 @@ const AboutMe = () => {
               communication goals. Amy has extensive training and expertise with
               a variety of diagnosis including articulation, phonology,
               literacy, childhood apraxia of speech, developmental language
-              disorder, late talkers, autism, gestalt language processing, and pragmatic
-              language.
+              disorder, late talkers, autism, gestalt language processing, and
+              pragmatic language.
+            </p>
+
+            <p>
+              Amy leads a small dedicated team of highly qualified and licensed
+              Speech-Language Pathologists who work together to support and
+              enhance the mission of Full Bloom Speech Language Pathology.
             </p>
           </div>
         </AboutMeParagraphContainer>
@@ -119,7 +125,6 @@ const ProfileImg = styled.img`
   margin-top: -0.5rem;
   padding: 1.5rem;
 
-
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;
     object-fit: cover;
@@ -174,7 +179,6 @@ const FamilyImg = styled.img`
   border: 2px;
   border-radius: 5px;
   padding: 1.5rem;
-
 
   @media (min-width: 375px) and (max-width: 768px) {
     width: 90%;

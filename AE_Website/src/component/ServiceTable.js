@@ -52,7 +52,8 @@ const ServiceTable = () => {
     'Early Intervention',
     'Late Talkers',
     'Articulation Disorders',
-    'Receptive and Expressive Language Disorders',
+    'Receptive Language Disorders',
+    'Expressive Language Disorders'
   ];
 
   const areasOfExpertise2 = [
@@ -60,6 +61,7 @@ const ServiceTable = () => {
     'Phonological Disorders',
     'Literacy',
     'Autism and Gestalt Language',
+    'Infant and Toddler Feeding'
   ];
 
   return (
