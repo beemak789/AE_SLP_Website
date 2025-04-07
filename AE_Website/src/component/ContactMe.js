@@ -48,6 +48,10 @@ const ContactMe = () => {
                   <img src='/mail.png' height={28} width={28} alt='' />
                   <p>amye@fullbloomspeechlanguagepathology.com</p>
                 </div>
+                <div className='info fax'>
+                  <img src='/fax.png' height={28} width={28} alt='' />
+                  <p>Fax: (980)-441-1092</p>
+                </div>
               </NumberEmailContainer>
               <AddressContainer>
                 <a href='https://www.google.com/maps/place/17111+Kenton+Dr+%23206b,+Cornelius,+NC+28031/@35.4492384,-80.8899337,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a92fb6b4db01:0x80234f9b85d475a4!8m2!3d35.4492384!4d-80.8899337?entry=ttu' target='_blank' rel="noreferrer">
