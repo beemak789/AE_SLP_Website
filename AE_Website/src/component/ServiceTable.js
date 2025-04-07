@@ -25,13 +25,15 @@ const ServiceTable = () => {
   const rows1 = [
     createData1(
       'What is a Speech-Only Evaluation?',
-      'This evaluation includes an oral motor examination, as well as an articulation and/or motor speech evaluation. The SLP may use both standardized and dynamic assessment measures to determine if the child presents with an articulation, phonological, and/or motor speech disorder such as Apraxia or Dysarthria.',
-      '$200'
+      'This evaluation includes an oral motor examination, as well as an articulation and/or motor speech evaluation. The SLP may use both standardized and dynamic assessment measures to determine if the child presents with an articulation, phonological, and/or motor speech disorder such as Apraxia or Dysarthria.'
     ),
     createData1(
       'What is a Comprehensive Language Evaluation?',
-      'This assessment measures a child’s auditory comprehension and expressive language skills. For older children, this may include literacy skills including phonemic/phonological awareness, reading comprehension and/or writing skills. A comprehensive parent interview and participation is an essential part of this evaluation along with a combination of standardized and dynamic assessment measures. This evaluation may also include an articulation evaluation if needed.',
-      '$350'
+      'This assessment measures a child’s auditory comprehension and expressive language skills. For older children, this may include literacy skills including phonemic/phonological awareness, reading comprehension and/or writing skills. A comprehensive parent interview and participation is an essential part of this evaluation along with a combination of standardized and dynamic assessment measures. This evaluation may also include an articulation evaluation if needed.'
+    ),
+    createData1(
+      'What is a Feeding Evaluation?',
+      'This assessment includes reviewing medical history, observing feeding and swallowing, assessing oral intake, evaluating nutritional status, and considering the feeding environment. The goal is to create a personalized plan to improve feeding safety, comfort, and nutrition',
     ),
   ];
 
@@ -50,7 +52,8 @@ const ServiceTable = () => {
     'Early Intervention',
     'Late Talkers',
     'Articulation Disorders',
-    'Receptive and Expressive Language Disorders',
+    'Receptive Language Disorders',
+    'Expressive Language Disorders'
   ];
 
   const areasOfExpertise2 = [
@@ -58,6 +61,7 @@ const ServiceTable = () => {
     'Phonological Disorders',
     'Literacy',
     'Autism and Gestalt Language',
+    'Infant and Toddler Feeding'
   ];
 
   return (
